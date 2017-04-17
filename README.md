@@ -30,3 +30,10 @@ This is the database for the WebApi application. It contains the users, roles, t
 ```xml
 <add key="IzendaApiUrl" value="http://localhost:9999/api/" />
 ```
+
+### Configuring Angular2StarterKitWeb
+- Change the 'WebApiUrl' value in the  <a  href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/Angular2StarterKitWeb/app/_helpers/izendaintegrate.js">izendaintegrate.js (Line 16)</a> file with the URL for the Izenda API.
+
+```javascript
+"WebApiUrl": "http://localhost:9999/api",
+``` 
