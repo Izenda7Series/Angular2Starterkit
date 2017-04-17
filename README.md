@@ -26,3 +26,7 @@ This is the database for the WebApi application. It contains the users, roles, t
     <add name="DefaultConnection" connectionString="[your connection string here]" providerName="System.Data.SqlClient" />
   </connectionStrings>
 ``` 
+- Modify the 'IzendaApiUrl' value in the <a  href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/WebApi2StarterKit/WebApi2StarterKit/Web.config">web.config (Line 80)</a> file with the url of the Izenda API.
+```xml
+<add key="IzendaApiUrl" value="http://localhost:9999/api/" />
+```
