@@ -21,7 +21,8 @@ export class IzendaIntegrate {
                 "ReportViewerPopup": "reportviewerpopup",
                 "Viewer": "viewer"
             },
-            "Timeout": 3600
+            "Timeout": 3600,
+            "NeedToEncodeUrl" : false
         });
     }
 
@@ -48,8 +49,10 @@ export class IzendaIntegrate {
 
     RenderReportList()
     {
+        let dom = document.getElementById('izenda-root');
         this.setContext();
-        IzendaSynergy.renderReportPage(document.getElementById('izenda-root'));
+        IzendaSynergy.renderReportPage(dom);
+        return dom;
     }
 
     RenderReportDesigner(): any
