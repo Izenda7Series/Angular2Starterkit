@@ -37,3 +37,9 @@ This is the database for the WebApi application. It contains the users, roles, t
 ```javascript
 "WebApiUrl": "http://localhost:9999/api",
 ``` 
+- Open the <a href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/Angular2StarterKitWeb/app/config.ts">config.ts (Line 4)</a> file and ensure 'apiEndPoint' is set. This will default to http://localhost:3358/ and can be left as is. 
+
+```javascript
+let apiEndPoint = "http://localhost:3358/";
+``` 
+- Download the <a href="https://downloads.izenda.com/v1.24.0/EmbeddedUI.zip">Izenda Embedded UI</a> and extract the files to the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/app/izenda">Angular2StarterKitWeb/app/izenda</a> folder.
