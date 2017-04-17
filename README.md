@@ -15,9 +15,8 @@ The Angular2Starterkit illustrates the concepts of integrating Izenda into Angul
 - Download and execute the <a href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/DbScripts/Izenda.sql">Izenda.sql</a> script.  
 - Download a copy of the <a href="https://github.com/Izenda7Series/Mvc5StarterKit/blob/master/Mvc5StarterKit/izendadb.config">izendadb.config</a> file and copy it to the root of your API deployment. Then modify the file with a valid connection string to this new database.
 
-### Creating the WebApi database
-This is the database for the WebApi application. It contains the users, roles, tenants used to login.
-- Create a database named 'IzendaAngular2_WebApi'. You may use any name of your choosing, just be sure to modify the script below to use the new database name.
+### Deploying the WebAPI & Database
+- Create a database named 'IzendaAngular2_WebApi'. This is the database for the WebApi application. It contains the users, roles, tenants used to login. You may use any name of your choosing, just be sure to modify the script below to use the new database name.
 - Download the <a href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/DbScripts/Starterkit_Api.sql">Starterkit_Api.sql</a> script.
 - Modify the <a  href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/WebApi2StarterKit/WebApi2StarterKit/Web.config">web.config (Line 75)</a> file with a valid connection string to this new database.
 
