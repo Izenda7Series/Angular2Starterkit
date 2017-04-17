@@ -42,3 +42,23 @@ The Angular2Starterkit illustrates the concepts of integrating Izenda into Angul
 let apiEndPoint = "http://localhost:3358/";
 ``` 
 - Download the <a href="https://downloads.izenda.com/v1.24.0/EmbeddedUI.zip">Izenda Embedded UI</a> and extract the files to the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/app/izenda">Angular2StarterKitWeb/app/izenda</a> folder.
+
+- Open a command-line window at root folder Angular2StarterKitWeb and run the following commands:
+```bash
+npm install
+``` 
+```bash
+npm start
+``` 
+
+### Run WebApi2StarterKit in Visual Studio
+- Build and run the WebApi2StarterKit project and login with the System Admin ccount below:
+   Tenant: 
+   Username: IzendaAdmin@system.com
+   Password: Izenda@123
+
+- Once you have logged in successfully, navigate to the Settings tab and enter your Izenda License Key .
+- Now navigate to Settings > Data Setup > Connection String and replace the current connection string with the one you created for the Retail Database.
+
+Click Reconnect and then save
+
