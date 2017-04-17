@@ -55,10 +55,10 @@ npm start
 ``` 
 
 ### Run WebApi2StarterKit in Visual Studio
-- Build and run the WebApi2StarterKit project and login with the System Admin ccount below:
-   Tenant: 
-   Username: IzendaAdmin@system.com
-   Password: Izenda@123
+- Build and run the WebApi2StarterKit project and login with the System Admin account below:<br />
+   Tenant: <br />
+   Username: IzendaAdmin@system.com<br />
+   Password: Izenda@123<br />
 
 - Once you have logged in successfully, navigate to the Settings tab and enter your Izenda License Key .
 - Now navigate to Settings > Data Setup > Connection String and replace the current connection string with the one you created for the Retail Database.
