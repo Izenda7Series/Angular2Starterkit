@@ -1,0 +1,4729 @@
+@import url('izenda-ui-blessed1.css');
+
+.izenda .visible-xs-block,
+.izenda .visible-xs-inline,
+.izenda .visible-xs-inline-block,
+.izenda .visible-sm-block,
+.izenda .visible-sm-inline,
+.izenda .visible-sm-inline-block,
+.izenda .visible-md-block,
+.izenda .visible-md-inline,
+.izenda .visible-md-inline-block,
+.izenda .visible-lg-block,
+.izenda .visible-lg-inline,
+.izenda .visible-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 1279px) {
+  .izenda .visible-xs {
+    display: block !important;
+  }
+
+  .izenda table.visible-xs {
+    display: table !important;
+  }
+
+  .izenda tr.visible-xs {
+    display: table-row !important;
+  }
+
+  .izenda th.visible-xs,
+  .izenda td.visible-xs {
+    display: table-cell !important;
+  }
+}
+
+@media (max-width: 1279px) {
+  .izenda .visible-xs-block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1279px) {
+  .izenda .visible-xs-inline {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 1279px) {
+  .izenda .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-sm {
+    display: block !important;
+  }
+
+  .izenda table.visible-sm {
+    display: table !important;
+  }
+
+  .izenda tr.visible-sm {
+    display: table-row !important;
+  }
+
+  .izenda th.visible-sm,
+  .izenda td.visible-sm {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-sm-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-sm-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-md {
+    display: block !important;
+  }
+
+  .izenda table.visible-md {
+    display: table !important;
+  }
+
+  .izenda tr.visible-md {
+    display: table-row !important;
+  }
+
+  .izenda th.visible-md,
+  .izenda td.visible-md {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-md-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-md-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .izenda .visible-lg {
+    display: block !important;
+  }
+
+  .izenda table.visible-lg {
+    display: table !important;
+  }
+
+  .izenda tr.visible-lg {
+    display: table-row !important;
+  }
+
+  .izenda th.visible-lg,
+  .izenda td.visible-lg {
+    display: table-cell !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .izenda .visible-lg-block {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .izenda .visible-lg-inline {
+    display: inline !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .izenda .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 1279px) {
+  .izenda .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1279px) {
+  .izenda .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .izenda .hidden-lg {
+    display: none !important;
+  }
+}
+
+.izenda .visible-print {
+  display: none !important;
+}
+
+@media print {
+  .izenda .visible-print {
+    display: block !important;
+  }
+
+  .izenda table.visible-print {
+    display: table !important;
+  }
+
+  .izenda tr.visible-print {
+    display: table-row !important;
+  }
+
+  .izenda th.visible-print,
+  .izenda td.visible-print {
+    display: table-cell !important;
+  }
+}
+
+.izenda .visible-print-block {
+  display: none !important;
+}
+
+@media print {
+  .izenda .visible-print-block {
+    display: block !important;
+  }
+}
+
+.izenda .visible-print-inline {
+  display: none !important;
+}
+
+@media print {
+  .izenda .visible-print-inline {
+    display: inline !important;
+  }
+}
+
+.izenda .visible-print-inline-block {
+  display: none !important;
+}
+
+@media print {
+  .izenda .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media print {
+  .izenda .hidden-print {
+    display: none !important;
+  }
+}
+
+.izenda .tooltip {
+  position: fixed;
+  word-break: break-all;
+}
+
+.izenda .error {
+  font-weight: normal;
+  color: #f14711;
+  padding-top: 5px;
+}
+
+.izenda .error span {
+  padding-bottom: 5px;
+  display: block;
+}
+
+.izenda .selectable,
+.izenda a {
+  cursor: pointer;
+}
+
+.izenda .validation.required:after {
+  content: " *";
+  color: red;
+}
+
+.izenda .required-before:before {
+  content: "* ";
+  color: red;
+}
+
+.izenda .align-right {
+  text-align: right;
+}
+
+.izenda .align-left {
+  text-align: left;
+}
+
+.izenda .disabled-elm,
+.izenda .disabled-link a,
+.izenda fieldset[disabled] .form-control,
+.izenda fieldset[disabled] .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda fieldset[disabled] .izenda-SearchTextBox-TextBox,
+.izenda fieldset[disabled] button,
+.izenda fieldset[disabled] a {
+  color: #CCC;
+  pointer-events: none;
+}
+
+.izenda .flex-layout {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.izenda .text-bold {
+  font-weight: bold;
+}
+
+.izenda mark {
+  padding: 0;
+  background: #ff8;
+}
+
+.izenda .hide {
+  display: none;
+}
+
+.izenda .show {
+  display: block;
+}
+
+.izenda fieldset[disabled] {
+  color: #CCC;
+}
+
+.izenda fieldset[disabled] .form-control,
+.izenda fieldset[disabled] .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda fieldset[disabled] .izenda-SearchTextBox-TextBox {
+  background: #EEE;
+}
+
+.izenda .success-color {
+  color: #7ED321;
+}
+
+.izenda .fail-color {
+  color: #f14711;
+}
+
+.izenda .warning-color {
+  color: #ff9b00;
+}
+
+.izenda .full-height {
+  height: 100%;
+}
+
+.izenda .full-width {
+  width: 100%;
+}
+
+.izenda .modal-header .btn {
+  margin-left: 15px;
+}
+
+.izenda .form-horizontal .control-label {
+  text-align: left;
+}
+
+.izenda .search-box {
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.izenda .search-box .form-control,
+.izenda .search-box .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .search-box .izenda-SearchTextBox-TextBox {
+  padding-right: 30px;
+}
+
+.izenda .white-space-normal {
+  white-space: normal;
+}
+
+.izenda .validator {
+  -webkit-transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+}
+
+.izenda .validator.errors {
+  border-left: 8px solid #D0021B;
+}
+
+.izenda .validator.errors:focus {
+  border-color: #D0021B;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(208,2,27,0.2);
+}
+
+.izenda .registed-prop-editornot(.form-control)not(.izenda-SearchTextBox .izenda-SearchTextBox-TextBox) {
+  background: #b2cbdb;
+}
+
+.izenda .inline-block {
+  display: inline-block;
+}
+
+.izenda .no-padding {
+  padding: 0;
+}
+
+.izenda .no-margin {
+  margin: 0;
+}
+
+.izenda .no-gutter>[class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.izenda .invisible {
+  visibility: hidden;
+}
+
+.izenda button.btn-icon,
+.izenda button.btn-icon:focus,
+.izenda button.btn-icon:active:focus,
+.izenda button.btn-icon.active:focus,
+.izenda button.btn-icon:active:hover,
+.izenda button.btn-icon.active:hover,
+.izenda button.btn-icon:hover {
+  background: none;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.izenda textarea {
+  resize: none;
+  width: 100%;
+}
+
+.izenda .can-drop {
+  border: 1px solid #73aa2c !important;
+}
+
+.izenda .cannot-drop {
+  border: 1px solid #ff0000 !important;
+}
+
+.izenda .rw-numberpicker .rw-btn {
+  height: 14px;
+  line-height: 14px;
+}
+
+.izenda .rw-input {
+  height: 28px;
+  padding: 5px 10px;
+}
+
+.izenda input[type=text]::-ms-clear {
+  display: none;
+}
+
+.izenda input[type=password]::-ms-reveal {
+  display: none;
+}
+
+.izenda .izenda-Account .izenda-Account-Header {
+  height: 44px;
+  top: 30px;
+}
+
+.izenda .izenda-Account .izenda-Account-Header .izenda-Account-logo {
+  width: 180px;
+}
+
+.izenda .izenda-Account .izenda-Account-Main {
+  top: 100px;
+}
+
+.izenda .izenda-Account .izenda-Account-Main .izenda-Account-PasswordSetup {
+  width: 530px;
+}
+
+.izenda .izenda-Account .izenda-Account-Main .izenda-Account-Login {
+  width: 350px;
+}
+
+.izenda .izenda-Account .izenda-Account-Main .izenda-Account-Container {
+  border-top: 5px solid #1c4e89;
+}
+
+.izenda .izenda-Account .izenda-Account-Main .izenda-Account-Container .izenda-SecurityInfo-Question {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.izenda .izenda-Account .izenda-Account-Main .izenda-Account-btn {
+  margin-left: 15px;
+}
+
+.izenda .izenda-Account .izenda-Account-errorMessage {
+  color: red;
+  padding-top: 10px;
+}
+
+.izenda .izenda-Account .izenda-Account-errorMessage-info {
+  padding-left: 20px;
+}
+
+.izenda .izenda-Account .izenda-Account-expirationPassword {
+  background-color: #fff;
+}
+
+.izenda .izenda-Account .izenda-Account-ForgotPassword {
+  padding-top: 10px;
+}
+
+.izenda .izenda-Account .izenda-Account-Login-icon {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  color: #999;
+}
+
+.izenda .izenda-Account .izenda-Account-Login-input {
+  padding-left: 30px;
+}
+
+.izenda .izenda-Account .izenda-Account-Login-header,
+.izenda .izenda-Account .izenda-Account-Login-body {
+  background-color: #f5f5f5;
+}
+
+.izenda .izenda-Account .izenda-Account-Login-footer {
+  background-color: #fff;
+}
+
+.izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-Header {
+  background-color: transparent;
+}
+
+.izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-Header .izenda-DashboardDesigner-Header-DashboarName {
+  background-color: #fff;
+  height: 40px;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-Header .izenda-DashboardDesigner-Header-DashboarName {
+    border-radius: 0px;
+  }
+}
+
+.izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-Header .izenda-DashboardDesigner-Header-PresentControl {
+  background-color: #fff;
+  min-width: 465px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-Header .izenda-DashboardDesigner-Header-PresentControl {
+    min-width: auto;
+    height: 40px;
+  }
+
+  .izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-Header .izenda-DashboardDesigner-Header-PresentControl .icon-exit-slideshow {
+    line-height: 30px;
+  }
+}
+
+.izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-FlexLayout {
+  float: left;
+  width: 100%;
+}
+
+.izenda .izenda-DashboardDesigner .izenda-DashboardDesigner-LeftContent .izenda-DashboardGrid .grid-line {
+  background-color: transparent;
+}
+
+.izenda .izenda-DashboardDesigner .stretch-background-image {
+  background-size: 100% 100%;
+}
+
+.izenda .izenda-DashboardDesigner .center-background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.izenda .izenda-DashboardDesigner .save-popup-container {
+  height: 120px;
+}
+
+.izenda .izenda-DashboardDesigner .scrollable {
+  overflow: auto;
+}
+
+.izenda .izenda-PresentationBar-Button {
+  width: 70px;
+}
+
+.izenda .izenda-PresentationBar-Button button:not(:first-child),
+.izenda .izenda-PresentationBar-Button input:not(:first-child) {
+  margin-left: 0;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardList {
+    top: 40px;
+  }
+}
+
+.izenda .izenda-DashboardList .izenda-DashboardItem:last-of-type {
+  margin-bottom: 0;
+}
+
+.izenda .izenda-DashboardList-content {
+  position: relative;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.izenda .izenda-DashboardList-content>div>.panel {
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+.izenda .izenda-DashboardList-content>div>.panel:last-child {
+  margin-bottom: 0;
+}
+
+.izenda .dashboard-detail {
+  border-radius: 2px;
+  margin: 0;
+}
+
+.izenda .dashboard-detail.panel {
+  border: none !important;
+}
+
+.izenda .dashboard-detail .panel-heading {
+  padding: 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .dashboard-detail .title-edit {
+  margin: 0;
+}
+
+.izenda .dashboard-detail .dashboard-description {
+  border-right: 1px solid #DEDEDE;
+}
+
+.izenda .dashboard-detail .dashboard-detail-info .control-label {
+  font-weight: normal;
+}
+
+.izenda .dashboard-detail .dashboard-detail-info .form-group {
+  border-bottom: 1px solid #DEDEDE;
+  margin: 10px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .dashboard-detail .dashboard-detail-info .form-group {
+    margin: 10px 0;
+  }
+
+  .izenda .dashboard-detail .dashboard-detail-info .form-group .control-label {
+    margin-left: -10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.izenda .dashboard-detail .table {
+  background-color: #e4e8eb;
+}
+
+.izenda .izenda-DashboardItem {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0;
+}
+
+.izenda .izenda-DashboardItem .izenda-DashboardItemHeader.show-header {
+  display: block;
+}
+
+.izenda .izenda-DashboardItem .izenda-DashboardItemHeader:not(.show-header) {
+  display: none;
+}
+
+.izenda .izenda-DashboardItem>.panel-heading {
+  background-color: #DEDEDE;
+  font-weight: bold;
+}
+
+.izenda .izenda-DashboardItem>.panel-body {
+  padding: 0;
+}
+
+.izenda .izenda-DashboardItem .panel-footer {
+  background-color: #fff;
+}
+
+.izenda .izenda-DashboardItem .empty-dashboard {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.izenda .izenda-DashboardItem .dashboard-detail[aria-expanded="true"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-DashboardItem .dashboard-detail:first-child {
+  margin-top: 0;
+}
+
+.izenda .izenda-DashboardItem .sticky {
+  z-index: 99;
+  margin-left: -1px;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-DashboardItem_last {
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-prev {
+  top: 45%;
+  left: 0;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardPresentation-SliderContainer .slick-prev {
+    left: 5px !important;
+  }
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-next {
+  top: 45%;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardPresentation-SliderContainer .slick-next {
+    right: 5px !important;
+  }
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-slider {
+  height: 100%;
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-slider .slick-list {
+  height: 100%;
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-slider .slick-list .slick-track {
+  height: 100%;
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-slider .slick-list .slick-track .slick-slide {
+  outline: none;
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-arrow:before {
+  font-size: 40px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardPresentation-SliderContainer .slick-arrow:before {
+    font-size: 20px;
+  }
+}
+
+.izenda .izenda-DashboardPresentation-SliderContainer .slick-dots {
+  margin-bottom: 15px;
+}
+
+.izenda .izenda-DashboardPresetPopup .izenda-DashboardPresetPopup-IconBox {
+  display: inline-block;
+  border: 5px solid #EEE;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 6px 0 5px;
+}
+
+.izenda .izenda-DashboardPresetPopup .izenda-DashboardPresetPopup-IconBox .izenda-DashboardPresetPopup-Icon {
+  color: #EEE;
+  font-size: 100px;
+  height: 120px;
+  width: 105px;
+}
+
+.izenda .izenda-DashboardPresetPopup .izenda-DashboardPresetPopup-IconBox:hover {
+  border-color: #73aa2c;
+}
+
+.izenda .izenda-DashboardPresetPopup .izenda-DashboardPresetPopup-IconBox:hover .izenda-DashboardPresetPopup-Icon {
+  color: #73aa2c;
+}
+
+.izenda .izenda-DashboardPresetPopup div[class^="izenda-GridLayout-Col"] {
+  text-align: center;
+}
+
+.izenda .izenda-BlankDashboardTile .izenda-BlankDashboardTile-TileType .izenda-BlankDashboardTile-TileType-btn {
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.izenda .izenda-BlankDashboardTile .izenda-BlankDashboardTile-TileType .izenda-BlankDashboardTile-TileType-btn {
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.izenda .izenda-DashboardTile {
+  padding: 5px;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content {
+  background-color: #fff;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header {
+  opacity: 0;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header {
+    opacity: 1;
+  }
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header label {
+  font-weight: normal;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header a.btn {
+  background: transparent;
+  padding: 0 5px;
+  border: none;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header[aria-selected="true"] {
+  background-color: #b2cbdb;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header .izenda-DashboardTile-Content-Header-Control {
+  opacity: 0;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header-slid:hover,
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Header-fixed {
+  z-index: 1;
+  opacity: 1;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content:hover .izenda-DashboardTile-Content-Header .izenda-DashboardTile-Content-Header-Control {
+  opacity: 1;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Body {
+  padding-top: 5px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Body {
+    padding-top: 40px;
+  }
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-Content-Body.izenda-DashboardTile-Content-Body-fixed {
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTile-TextTileBackSide {
+  padding: 10px;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .izenda-DashboardTitle-TileTitleBackSide-TinyMCE {
+  margin-right: 30px;
+}
+
+.izenda .izenda-DashboardTile .izenda-DashboardTile-Content .Izenda-DashboardTile-FilterDescription_GridLayout {
+  margin-left: 10px;
+}
+
+.izenda .izenda-DashboardViewer .Izenda-DashboardGrid_Section .izenda-DashboardGrid .chart-body {
+  overflow: visible;
+}
+
+.izenda .report-part-back-side .report-part-footer {
+  background-color: #EEE;
+}
+
+.izenda .izenda-DashboardTile-TextTileFrontSide-Toolbar {
+  background-color: #EEE;
+  border-top-left-radius: 4;
+  background-clip: padding-box;
+  border-top-right-radius: 4;
+  background-clip: padding-box;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-DashboardTile-TextTileFrontSide-Toolbar .font-format {
+  border-right: 1px solid #DEDEDE;
+  padding: 5px;
+  height: 40px;
+}
+
+.izenda .izenda-DashboardTile-TextTileFrontSide-Toolbar .button-group {
+  border-right: 1px solid #DEDEDE;
+  padding: 5px;
+  height: 40px;
+}
+
+.izenda .izenda-DashboardTile-TextTileFrontSide-Toolbar .izenda-DashboardTile-TextTileFrontSide-Toolbar-ColorStyling {
+  border-right: 1px solid #DEDEDE;
+  padding: 5px;
+  height: 40px;
+}
+
+.izenda .izenda-DashboardTile-TileTitleBackSide .izenda-DashboardTitle-TileTitleBackSide-Input {
+  position: relative;
+  padding-right: 30px;
+}
+
+.izenda .izenda-DashboardTile-TileTitleBackSide .izenda-DashboardTitle-TileTitleBackSide-Input>a {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.izenda .izenda-DashboardTile-TileTitleBackSide textarea {
+  resize: none;
+}
+
+.izenda .report-part-chart-front-side {
+  height: 100%;
+}
+
+.izenda .report-part-chart-front-side .chart-toolbar {
+  background: transparent;
+  padding: 4px;
+  margin: 0px;
+}
+
+.izenda .report-part-chart-front-side .chart-toolbar .right-side {
+  float: right;
+}
+
+.izenda .report-part-chart-front-side .chart-toolbar .right-side select.form-control,
+.izenda .report-part-chart-front-side .chart-toolbar .right-side .izenda-SearchTextBox select.izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .report-part-chart-front-side .chart-toolbar .right-side select.izenda-SearchTextBox-TextBox {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.izenda .report-part-chart-front-side .default-layout {
+  height: 100%;
+}
+
+.izenda .report-part-chart-front-side .default-layout .row,
+.izenda .report-part-chart-front-side .default-layout .izenda-GridLayout .izenda-GridLayout-Row,
+.izenda-GridLayout .izenda .report-part-chart-front-side .default-layout .izenda-GridLayout-Row,
+.izenda .report-part-chart-front-side .default-layout .izenda-GridLayout .izenda-GridLayout-Row_full,
+.izenda-GridLayout .izenda .report-part-chart-front-side .default-layout .izenda-GridLayout-Row_full {
+  margin: 0;
+}
+
+.izenda .report-part-chart-front-side .default-layout .chart-goes-here {
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+}
+
+.izenda .report-part-chart-front-side .default-layout .chart-goes-here span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  background-color: #f5f5f5;
+  margin-left: -70px;
+  margin-top: -20px;
+}
+
+.izenda .grid-lines-settings .configuration {
+  width: 35%;
+}
+
+.izenda .grid-lines-settings .preview {
+  width: 65%;
+}
+
+.izenda .grid-lines-settings .form-group:hover {
+  background-color: transparent;
+}
+
+.izenda .grid-lines-settings .form-group>label {
+  font-weight: bold;
+}
+
+.izenda .grid-lines-settings .prop-control {
+  width: 100%;
+}
+
+.izenda .grid-lines-settings .visible input {
+  margin-left: 10px;
+}
+
+.izenda .grid-lines-settings .color span {
+  margin-top: 5px;
+}
+
+.izenda .grid-lines-settings .style .dash-style {
+  width: 80%;
+}
+
+.izenda .grid-lines-settings .thickness {
+  margin-top: 10px;
+}
+
+.izenda .grid-lines-settings .izenda-GridLine-XAxis {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .legend-settings .form-group {
+  border-bottom: none;
+  line-height: initial;
+}
+
+.izenda .legend-settings .form-group:hover {
+  background-color: transparent;
+}
+
+.izenda .legend-settings .izenda-Legend-BorderColor,
+.izenda .legend-settings .izenda-Legend-Thickness {
+  padding-left: 15px;
+}
+
+.izenda .legend-settings .izenda-Legend-TitleFont {
+  padding-left: 15px;
+}
+
+.izenda .legend-settings select.form-control,
+.izenda .legend-settings .izenda-SearchTextBox select.izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .legend-settings select.izenda-SearchTextBox-TextBox {
+  z-index: 1;
+}
+
+.izenda .legend-settings .prop-label {
+  margin-top: 5px;
+}
+
+.izenda .chart-settings .u_DisabledPointerEvent {
+  pointer-events: none;
+}
+
+.izenda .chart-settings .setting-header {
+  border-bottom: 1px solid #DEDEDE;
+  display: block;
+  line-height: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.izenda .chart-settings .configuration {
+  border: 1px solid #DEDEDE;
+  width: 45%;
+}
+
+.izenda .chart-settings .preview {
+  border: 1px solid #DEDEDE;
+  width: 55%;
+}
+
+.izenda .chart-settings .preview>div.body {
+  min-height: 300px;
+  height: 300px;
+  margin: 30px;
+  padding-top: 0;
+  overflow: auto;
+}
+
+.izenda .chart-settings .border-width {
+  width: 80px;
+}
+
+.izenda .chart-settings .form-group {
+  border: none;
+  line-height: 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+.izenda .izenda-ChartSettingsPopup .modal-body {
+  padding: 0;
+}
+
+.izenda .xy-plane-settings .form-group {
+  border-bottom: none;
+  line-height: initial;
+}
+
+.izenda .xy-plane-settings .form-group:hover {
+  background-color: transparent;
+}
+
+.izenda .xy-plane-settings .form-group.axis-title-field {
+  border-bottom: none;
+}
+
+.izenda .xy-plane-settings .prop-control {
+  width: 100%;
+}
+
+.izenda .xy-plane-settings .axis-title {
+  width: 30%;
+  font-weight: bold;
+}
+
+.izenda .xy-plane-settings .axis-title-control {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.izenda .xy-plane-settings .axis-title-control select {
+  width: 50%;
+}
+
+.izenda .xy-plane-settings .izenda-XYPlane-XAxis {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .xy-plane-settings .axis-title-properties {
+  display: none;
+}
+
+.izenda .xy-plane-settings .title {
+  margin-top: 15px;
+}
+
+.izenda .xy-plane-settings .title>span {
+  margin-top: 5px;
+}
+
+.izenda .xy-plane-settings .title input[type='checkbox'] {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+
+.izenda .xy-plane-settings .title>input[type='text'] {
+  width: 90%;
+}
+
+.izenda .xy-plane-settings .xyplane-font-setting {
+  margin-top: 15px;
+  line-height: initial;
+}
+
+.izenda .xy-plane-settings .xyplane-font-setting>span {
+  padding-left: 25px;
+  margin-top: 5px;
+}
+
+.izenda .xy-plane-settings .alignment {
+  margin-top: 15px;
+}
+
+.izenda .xy-plane-settings .alignment>span {
+  margin-top: 5px;
+  padding-left: 25px;
+}
+
+.izenda .xy-plane-settings .alignment select {
+  width: 40%;
+}
+
+.izenda .xy-plane-settings .input-with-info {
+  margin-top: 15px;
+}
+
+.izenda .xy-plane-settings .input-with-info>span {
+  margin-top: 5px;
+}
+
+.izenda .xy-plane-settings .input-with-info>div {
+  margin-left: -20px;
+}
+
+.izenda .xy-plane-settings select.form-control,
+.izenda .xy-plane-settings .izenda-SearchTextBox select.izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .xy-plane-settings select.izenda-SearchTextBox-TextBox {
+  z-index: 1;
+}
+
+.izenda .xy-plane-settings .numeric-input.show-icon {
+  width: 80%;
+}
+
+.izenda .form-border-none .form-group {
+  border: none;
+}
+
+.izenda .form-border-none .form-group .form-text {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.izenda .form-border-none .form-group .input-text {
+  border-right: 0;
+}
+
+.izenda .form-border-none .form-group .interval {
+  border: 1px solid #EEE;
+  text-align: center;
+  padding: 5px;
+  height: 30px;
+  margin-left: -1px;
+  background-color: #EFEFEF;
+}
+
+.izenda .form-border-none .form-group .radio-margin {
+  margin-right: 3px;
+}
+
+.izenda .reports-dtsourcetree .checkbox input[type="checkbox"] {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  margin: 0;
+}
+
+.izenda .reports-dtsourcetree .overflow-text {
+  max-width: 85%;
+  display: inline-block;
+}
+
+.izenda .reports-dtsourcetree .icon-toggle-triangle {
+  position: absolute;
+}
+
+.izenda .reports-dtsourcetree .panel-heading {
+  padding-top: 0;
+}
+
+.izenda .reports-dtsourcetree .panel-group {
+  margin-bottom: 0;
+}
+
+.izenda .reports-dtsourcetree .panel-body>.panel-group {
+  padding-left: 10px;
+}
+
+.izenda .reports-dtsourcetree .panel-body>ul {
+  padding-left: 30px;
+  list-style: none;
+}
+
+.izenda .reports-dtsourcetree .normal {
+  padding-right: 20px;
+}
+
+.izenda .reports-dtsourcetree .checkbox {
+  margin: 0;
+  padding-right: 20px;
+}
+
+.izenda .reports-dtsourcetree .icon-toggle-triangle.selectable,
+.izenda .reports-dtsourcetree a.icon-toggle-triangle {
+  margin: 0;
+  padding: 0;
+}
+
+.izenda .reports-dtsourcetree .custom-checkbox {
+  color: #7ED321;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  padding: 0;
+}
+
+.izenda .reports-dtsourcetree .fieldItem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.izenda .reports-dtsourcetree .fieldItem.registed-prop-editor {
+  background-color: #b2cbdb;
+}
+
+.izenda .reports-dtsourcetree i {
+  padding-right: 5px;
+}
+
+.izenda .embedded-script {
+  padding-bottom: 10px;
+}
+
+.izenda .embedded-script textarea.form-control,
+.izenda .embedded-script .izenda-SearchTextBox textarea.izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .embedded-script textarea.izenda-SearchTextBox-TextBox {
+  resize: none;
+  height: 150px;
+}
+
+.izenda .izenda-Exporting .margin-config {
+  width: 60px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.izenda .izenda-Exporting .izenda-Exporting-report {
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+}
+
+.izenda .izenda-ExportingConfig {
+  min-width: 250px;
+}
+
+.izenda .field-container-wrapper {
+  margin-right: 25px;
+}
+
+.izenda .field-container-wrapper .input-drop-container {
+  height: 100%;
+  width: 100%;
+  overflow-x: auto;
+  margin-right: 25px;
+}
+
+.izenda .field-container-wrapper .input-drop-container section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.izenda .field-container-wrapper .field-container {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+.izenda .field-container-wrapper .field-container .field-wrapper {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.izenda .field-container-wrapper .field-container .field-element {
+  background-color: #f2f9fc;
+  border-radius: 2px;
+  border: 1px solid #c9e6f2;
+  color: #08c;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.9em;
+  margin-left: 2px;
+  margin-right: 2px;
+  vertical-align: top;
+  max-width: 150px;
+}
+
+.izenda .field-container-wrapper .field-container .field-element .field-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  padding: 2px 5px;
+}
+
+.izenda .field-container-wrapper .field-container .field-element .field-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-left: 1px solid #c9e6f2;
+  padding: 1px 5px 2px;
+}
+
+.izenda .field-container-wrapper .field-container .field-element-selected {
+  background-color: #b2cbdb;
+}
+
+.izenda .field-container-wrapper .icon-drag {
+  color: #CCC;
+  height: 17px;
+  right: -3px;
+}
+
+.izenda .field-container-wrapper .field-container-drag-resize {
+  width: 100%;
+  height: 100%;
+}
+
+.izenda .izenda-FieldsDetail .second-control {
+  margin: 10px 0;
+}
+
+.izenda .izenda-FieldsDetail .second-control .two-input-control {
+  position: absolute;
+  left: -45px;
+}
+
+.izenda .izenda-FieldsDetail .filter-value {
+  display: block;
+  padding: 5px;
+  min-height: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-FieldsDetail .filter-value .checkbox {
+  padding: 0;
+  margin: 0;
+  min-height: auto;
+}
+
+.izenda .izenda-FieldsDetail .filter-value .checkbox span {
+  white-space: nowrap;
+}
+
+.izenda .izenda-FieldsDetail .Select-value {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+
+.izenda .izenda-FieldsDetail .Select-value .Select-value-label {
+  max-width: 80px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.izenda .izenda-FieldsDetail .checkbox.izenda-GridLayout-Col4 input[type="checkbox"] {
+  margin-top: 10px;
+}
+
+.izenda .izenda-FieldsDetail .report-format-panel .panel-body {
+  position: relative;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.izenda .izenda-FieldTreeContainer .popover-container {
+  position: fixed;
+  width: 500px;
+}
+
+.izenda .report-filter-item .filter-item-value {
+  height: 120px;
+  overflow: auto;
+}
+
+.izenda .report-filter-item .filter-item-label {
+  background-color: #e4e8eb;
+  padding: 10px;
+}
+
+.izenda .report-filter-item .filter-item-label .overflow-text {
+  display: block;
+}
+
+.izenda .report-filter-item .filter-item-label .overflow-text span.operator {
+  display: none;
+}
+
+.izenda .report-filter-item .filter-item-label .filter-label {
+  position: relative;
+}
+
+.izenda .report-filter-item .filter-item-label .filter-properties-settings {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+.izenda .report-filter-item .filter-item-label .filter-properties-settings .icon-setting {
+  display: none;
+}
+
+.izenda .report-filter-item .filter-item-label:hover .filter-properties-settings .icon-setting {
+  display: inline;
+}
+
+.izenda .report-filter-item .filter-item-label:hover .overflow-text span.operator {
+  display: inline-block;
+}
+
+.izenda .report-filter-item .checkbox {
+  min-height: 30px;
+  padding-top: 6px;
+}
+
+.izenda .report-filter-item .combo-tree .tree {
+  width: 100%;
+}
+
+.izenda .report-filter-item .combo-tree .tree .panel-heading {
+  min-height: 30px;
+}
+
+.izenda .izenda-FilterGroupPanel .panel {
+  border: none;
+  box-shadow: none;
+}
+
+.izenda .izenda-FilterGroupPanel .panel[aria-expanded="false"] {
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-FilterGroupPanel .panel-heading {
+  border-top: 1px solid #DEDEDE;
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  padding: 5px 10px;
+}
+
+.izenda .izenda-FilterGroupPanel .panel-footer {
+  background-color: #fff;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-FilterGroupPanel .izenda-Divider {
+  margin-top: 50px;
+}
+
+.izenda .izenda-FilterHeader .header-button {
+  width: 165px;
+}
+
+.izenda .filters-body-container .panel-collapse {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+}
+
+.izenda .filters-body-container .filter-body {
+  height: 100%;
+  border: 1px solid transparent;
+  padding-bottom: 0;
+}
+
+.izenda .filters-body-container .filter-control {
+  padding: 5px 30px;
+  background-color: #EEE;
+  margin: 5px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.izenda .filters-body-container .filter-control:hover {
+  background-color: #b2cbdb;
+}
+
+.izenda .filters-body-container .filter-control .filter-position {
+  position: absolute;
+  top: 12px;
+  left: 7px;
+}
+
+.izenda .filters-body-container .filter-control .icon-cancel {
+  top: 10px;
+  right: 0;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  color: #fff;
+}
+
+.izenda .filters-body-container .filter-control .icon-attention {
+  top: 10px;
+  right: 15px;
+  position: absolute;
+}
+
+.izenda .filters-body-container .selected-filter-item .filter-control {
+  background-color: #b2cbdb;
+}
+
+.izenda .filters-body-container .panel-body {
+  height: 100%;
+  overflow: auto;
+  padding: 0;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .filters-body-container .control-label {
+  min-width: 80px;
+}
+
+.izenda .Izenda-FormatTree_Panel.panel {
+  box-shadow: none;
+  margin: 0;
+  border: none;
+}
+
+.izenda .Izenda-FormatTree_Panel .panel {
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.izenda .Izenda-FormatTree_Panel .panel-heading {
+  padding-bottom: 0;
+}
+
+.izenda .Izenda-FormatTree_Panel .panel-heading span:hover {
+  cursor: pointer;
+}
+
+.izenda .Izenda-FormatTree_Panel .panel-body {
+  padding: 0;
+}
+
+.izenda .Izenda-FormatTree_Panel .panel-body ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
+
+.izenda .Izenda-FormatTree_Panel .panel-body ul li {
+  padding-top: 5px;
+}
+
+.izenda .izenda-FormSettings .format-h1 {
+  font-size: 32px;
+}
+
+.izenda .izenda-FormSettings .format-h2 {
+  font-size: 28px;
+}
+
+.izenda .izenda-FormSettings .format-h3 {
+  font-size: 24px;
+}
+
+.izenda .izenda-FormSettings .format-h4 {
+  font-size: 20px;
+}
+
+.izenda .izenda-FormSettings .format-h5 {
+  font-size: 16px;
+}
+
+.izenda .izenda-FormSettings .format-h6 {
+  font-size: 12px;
+}
+
+.izenda .izenda-FormSettings .color-picker {
+  border: none;
+}
+
+.izenda .report-part-gauge-front-side {
+  height: 100%;
+}
+
+.izenda .report-part-gauge-front-side .default-layout {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.izenda .report-part-gauge-front-side .default-layout .chart-goes-here {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}
+
+.izenda .izenda-ReportPartConfiguration .metrics {
+  margin-right: 25px;
+}
+
+.izenda .gauge-item-value .form-group {
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.izenda .gauge-item-value .field-container-wrapper {
+  margin-right: 0;
+}
+
+.izenda .gauge-item-value .form-group:not(threshold-item) {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .gauge-item-value .form-group:not(threshold-item) {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.izenda .gauge-item-value .scale-range {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.izenda .gauge-item-value .scale-range>div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.izenda .gauge-item-value .scale-range>span {
+  padding-right: 10px;
+}
+
+.izenda .gauge-item-value .scale-range .scale-to {
+  padding-left: 20px;
+}
+
+.izenda .gauge-item-value .field-container-wrapper .field-container {
+  padding: 0;
+}
+
+.izenda .gauge-item-value .threshold-item {
+  border: none;
+}
+
+.izenda .gauge-item-value .threshold-item .gauge-label {
+  padding-left: 25px;
+}
+
+.izenda .gauge-item-value .threshold-item .gauge-control {
+  padding-left: 50px;
+}
+
+.izenda .gauge-item-value .threshold-item .gauge-control>:first-child {
+  position: absolute;
+  left: 10px;
+}
+
+.izenda .gauge-item-value .threshold-item .gauge-control>:not(:first-child) {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.izenda .gauge-item-value .threshold-item .threshold-range>:nth-child(2) {
+  margin-top: 10px;
+}
+
+.izenda .insert-table .popover-content {
+  padding: 4px;
+}
+
+.izenda .insert-table .grid-border {
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+.izenda .insert-table .grid-cell a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .insert-table .grid-cell a:hover,
+.izenda .insert-table .grid-cell a.active {
+  border-color: #3498db;
+  background: #3498db;
+}
+
+.izenda .operator-group {
+  position: relative;
+}
+
+.izenda .operator-group .operator {
+  margin: 10px 0;
+}
+
+.izenda .operator-group select[data-inlineOpValue="true"] {
+  width: 80%;
+}
+
+.izenda .operator-group .btn-popup {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding: 4px 8px;
+}
+
+.izenda .operator-group .manual-entry .select-box-container {
+  margin-top: 10px;
+}
+
+.izenda .operator-group .manual-entry .select-box-container .Select-option {
+  padding-left: 15px;
+}
+
+.izenda .izenda-PropertiesEditor .operator-group .rw-popup-container.rw-calendar-popup {
+  left: -80px;
+}
+
+.izenda .izenda-Reports .collapsed>.left-tab {
+  display: none;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-menu {
+  width: 100%;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tab-panel {
+  margin: 0;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-menu-item {
+  text-align: center;
+  width: 50%;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-menu-item a {
+  border: none;
+  background: #1c4e89;
+  text-transform: uppercase;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-menu-item a:hover {
+  border: none;
+  color: #CCC;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-menu-item:not(.active) a {
+  background: #10427c;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-menu-item.active a {
+  background: #1c4e89;
+  color: #e4e8eb;
+}
+
+.izenda .izenda-Reports .tabs.left-tab .tabs-navigation {
+  border-bottom: none;
+}
+
+.izenda .izenda-Reports .title-edit .input-group {
+  width: 100%;
+}
+
+.izenda .izenda-Reports .title-edit .input-group .form-control,
+.izenda .izenda-Reports .title-edit .input-group .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .izenda-Reports .title-edit .input-group .izenda-SearchTextBox-TextBox {
+  padding-right: 80px;
+}
+
+.izenda .izenda-Reports .title-edit .input-group .input-group-btn {
+  width: initial;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.izenda .izenda-Reports .title-edit .input-group .input-group-btn .btn-default {
+  border: none;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 1px;
+}
+
+.izenda .izenda-Reports .title-edit .input-group .input-group-btn .btn-default:first-child {
+  border-left: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-Reports .title-edit .input-group .input-group-btn .btn-default:last-child {
+  margin-right: 1px;
+  border-top-right-radius: 0;
+  background-clip: padding-box;
+  border-bottom-right-radius: 0;
+  background-clip: padding-box;
+}
+
+.izenda .izenda-ReportPartToolbar {
+  height: 30px;
+  line-height: 30px;
+}
+
+.izenda .izenda-ReportPartToolbar .izenda-ReportPartChartToolbar_leftSide {
+  margin-right: 170px;
+}
+
+.izenda .izenda-ReportPartToolbar .izenda-ReportPartMapToolbar_leftSide {
+  margin-right: 370px;
+}
+
+.izenda .izenda-ReportPartToolbar .izenda-Dropdown {
+  width: 100px;
+}
+
+.izenda .izenda-ReportGroupPanel .panel-body {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.izenda .izenda-ReportGroupPanel-Fullsize {
+  top: 50px;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+}
+
+.izenda .izenda-ReportGroupPanel-Fullsize .report-body {
+  height: 100%;
+}
+
+.izenda .izenda-ReportGroupPanel-Fullsize .report-body>.panel-collapse {
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.izenda .izenda-ReportGroupPanel-Fullsize .report-body>.panel-collapse>div {
+  height: 100%;
+}
+
+.izenda .izenda-ReportGroupPanel-Fullsize .report-body>.panel-collapse>div>.panel-body {
+  height: 100%;
+}
+
+.izenda .izenda-ReportBodyGrid-editable .report-content {
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.izenda .izenda-ReportBodyViewer.center-horizontal {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.izenda .izenda-ReportBodyViewer.center-horizontal .izenda-reportPartGrid_title {
+  text-align: center;
+}
+
+.izenda .izenda-ReportBodyViewer.center-vertical {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.izenda .izenda-ReportBodyViewer.center-vertical .izenda-chart-container {
+  height: auto !important;
+}
+
+.izenda .izenda-ReportBodyViewer .grant-total {
+  display: table-cell !important;
+}
+
+.izenda .izenda-ReportBodyViewer .grant-total>.report-part-grid-preview {
+  float: left;
+}
+
+.izenda .izenda-ReportBodyViewer .izenda-grid-chart {
+  position: relative;
+}
+
+.izenda .izenda-ReportBodyViewer .report-body .report-content .chart-body {
+  overflow: visible;
+}
+
+.izenda .izenda-ReportDesigner .panel-footer {
+  background-color: #fff;
+  border-top: 1px solid #EEE;
+}
+
+.izenda .data-source-grid .header-action-vcenter {
+  height: 58px;
+  line-height: 58px;
+}
+
+.izenda .data-source-grid .header-action-vcenter .add-relationship-button {
+  margin-right: 20px;
+}
+
+.izenda .data-source-grid [class^="icon-"] {
+  cursor: pointer;
+}
+
+@media (max-width: 1279px) {
+  .izenda .data-source-grid .izenda-DataGridSearch-iconSearch {
+    margin-right: 5px;
+  }
+}
+
+.izenda .izenda-FilterDatasource .panel {
+  border: none;
+  box-shadow: none;
+}
+
+.izenda .izenda-FilterDatasource .panel[aria-expanded="false"] {
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-FilterDatasource .panel-heading {
+  border-top: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  border-left: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-FilterDatasource .panel-body {
+  padding: 0;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-FilterDatasource .filter-control {
+  padding: 5px 20px;
+  background-color: #EEE;
+  margin: 3px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.izenda .izenda-FilterDatasource .filter-control:hover {
+  background-color: #b2cbdb;
+}
+
+.izenda .izenda-FilterDatasource .filter-control.registed-prop-editor,
+.izenda .izenda-FilterDatasource .filter-control.selected-filter-item {
+  background-color: #b2cbdb;
+}
+
+.izenda .izenda-FilterDatasource .filter-control .filter-params-position {
+  position: absolute;
+  top: 12px;
+  left: 7px;
+}
+
+.izenda .report-detail {
+  margin: 0;
+  border-radius: 2px;
+}
+
+.izenda .report-detail.panel {
+  border: none !important;
+}
+
+.izenda .report-detail .panel-heading {
+  padding: 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .report-detail .title-edit {
+  margin: 0;
+}
+
+.izenda .report-detail .report-description {
+  border-right: 1px solid #DEDEDE;
+}
+
+@media (max-width: 1279px) {
+  .izenda .report-detail .report-description {
+    border-right: 0px;
+  }
+}
+
+.izenda .report-detail .report-detail-info .control-label {
+  font-weight: normal;
+}
+
+.izenda .report-detail .report-detail-info .form-group {
+  border-bottom: 1px solid #DEDEDE;
+  margin: 10px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .report-detail .report-detail-info .form-group {
+    margin: 10px 0;
+  }
+
+  .izenda .report-detail .report-detail-info .form-group .control-label {
+    margin-left: -10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.izenda .report-format-element .body {
+  height: 300px;
+}
+
+.izenda .report-format-element .format-item {
+  position: relative;
+  height: 100%;
+  display: table;
+  width: 100%;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.izenda .report-format-element .format-item>div {
+  background-color: #fff;
+  height: 100%;
+  position: relative;
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.izenda .report-format-element .format-item>div.text {
+  padding-right: 15px;
+  padding-left: 5px;
+}
+
+.izenda .report-format-element .format-item>div.image {
+  text-align: center;
+}
+
+.izenda .report-format-element .format-item>div.image .icon-img {
+  display: block;
+  font-size: 50px;
+}
+
+.izenda .report-format-element .format-item>div.verticalRule {
+  display: inherit;
+  vertical-align: inherit;
+  width: 100%;
+  height: 85%;
+  padding-top: 5px;
+}
+
+.izenda .report-format-element .format-item input {
+  vertical-align: middle;
+}
+
+.izenda .report-format-element .format-item .vertical-rule {
+  height: 100%;
+  width: 4px;
+  margin: auto;
+}
+
+.izenda .report-format-element .format-item .horizontal-rule {
+  height: 4px;
+}
+
+.izenda .report-format-element .format-item .thin-horizontal-rule {
+  height: 4px;
+}
+
+.izenda .report-format-element .format-item a {
+  display: table-cell;
+  vertical-align: middle;
+  background: #fff;
+  padding-right: 10px;
+  cursor: inherit;
+}
+
+.izenda .report-format-element .format-item a span {
+  cursor: pointer;
+}
+
+.izenda .report-format-element .format-item a.image {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+}
+
+.izenda .report-format-element .format-item a.verticalRule {
+  display: inherit;
+  vertical-align: inherit;
+  padding: initial;
+  width: 100%;
+  text-align: center;
+}
+
+.izenda .report-format-element .format-item .selected-item {
+  background-color: #b2cbdb;
+}
+
+.izenda .report-format-element .resizable .corner-right-bottom,
+.izenda .report-format-element .resizable .corner-left-bottom {
+  width: 10px;
+  height: 10px;
+}
+
+.izenda .report-format-element .panel-body {
+  width: 100%;
+}
+
+.izenda .report-format-element .report-format-label {
+  padding-top: 6px;
+  display: inline-block;
+}
+
+.izenda .report-format-element div.image {
+  background-repeat: no-repeat;
+}
+
+.izenda .report-history .overflow-text {
+  display: block;
+}
+
+.izenda .report-history .table-cell span {
+  cursor: pointer;
+}
+
+.izenda .report-history .default-table .izenda-ScrollBox {
+  background-color: #e4e8eb;
+}
+
+.izenda .report-history .design-report-icon {
+  color: #000;
+}
+
+.izenda .report-history .history-search {
+  padding-bottom: 40px;
+}
+
+.izenda .izenda-ReportItem {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 0;
+}
+
+.izenda .izenda-ReportItem .izenda-ReportItemHeader.show-header {
+  display: block;
+}
+
+.izenda .izenda-ReportItem .izenda-ReportItemHeader:not(.show-header) {
+  display: none;
+}
+
+.izenda .izenda-ReportItem .affix {
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+}
+
+.izenda .izenda-ReportItem>.panel-heading {
+  background-color: #DEDEDE;
+  font-weight: bold;
+}
+
+.izenda .izenda-ReportItem>.panel-body {
+  padding: 0;
+}
+
+.izenda .izenda-ReportItem .panel-footer {
+  background-color: #fff;
+}
+
+.izenda .izenda-ReportItem .empty-report {
+  background-color: #fff;
+  padding: 15px;
+}
+
+.izenda .izenda-ReportItem .report-detail[aria-expanded="true"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-ReportItem .report-detail:first-child {
+  margin-top: 0;
+}
+
+.izenda .izenda-ReportItem_last {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-ReportList-content {
+    top: 40px;
+  }
+}
+
+.izenda .izenda-ReportList-content>div>.panel {
+  box-shadow: none;
+  margin-bottom: 15px;
+}
+
+.izenda .izenda-ReportList-content>div>.panel:last-child {
+  margin-bottom: 0;
+}
+
+.izenda .izenda-ReportList-content .izenda-ReportItem:last-of-type {
+  margin-bottom: 0;
+}
+
+.izenda .report-list-header select.form-control,
+.izenda .report-list-header .izenda-SearchTextBox select.izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .report-list-header select.izenda-SearchTextBox-TextBox {
+  width: 200px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.izenda .report-list-header .btn-highlight {
+  border-top: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.izenda .report-list-header .btn-icon {
+  background-color: #b2cbdb;
+  width: 34px;
+  height: 34px;
+}
+
+.izenda .report-list-header .btn-icon:first-child {
+  border-right: 1px solid #DEDEDE;
+  margin-right: 1px;
+}
+
+.izenda .izenda-ReportDesignerToolBar .tool-tip {
+  background: #EEE;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
+.izenda .report-part {
+  padding: 5px;
+}
+
+.izenda .report-part .report-content {
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+}
+
+.izenda .report-part .report-content-shadow {
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+
+.izenda .report-part .report-part-front-side {
+  background-color: #fff;
+  height: 100%;
+}
+
+.izenda .report-part .front-side-content {
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .report-part .front-side-content {
+    padding-top: 40px;
+  }
+}
+
+.izenda .report-part .front-side-content .izenda-GridLayout-Row,
+.izenda .report-part .front-side-content .izenda-GridLayout .izenda-GridLayout-Row_full,
+.izenda-GridLayout .izenda .report-part .front-side-content .izenda-GridLayout-Row_full {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.izenda .report-part #record {
+  display: inline-block;
+}
+
+.izenda .izenda-ReportPart-Fullsize {
+  width: 100%;
+  height: 100%;
+  background-color: #EEE;
+}
+
+.izenda .izenda-ReportPart-Fullsize .report-part {
+  height: 100%;
+}
+
+.izenda .izenda-ReportPart-smallSize .izenda-ChartMetrics-text,
+.izenda .izenda-ReportPart-smallSize .izenda-PointOptions-text {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-ReportPartConfiguration {
+    margin: 10px;
+  }
+}
+
+.izenda .izenda-ReportPartBackSide {
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .header-panel {
+  border: 1px solid #DEDEDE;
+  border-right: none;
+  border-left: none;
+  padding: 7px;
+  position: absolute;
+  width: 100%;
+  border-radius: 0;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .expend-left {
+  color: #000;
+  padding-right: 5px;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .expend-right {
+  color: #000;
+  padding-left: 5px;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .report-part-panel {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .report-part-panel:first-child {
+  border-right: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .report-part-panel>.izenda-ScrollBox>.izenda-ScrollBox-View {
+  background: #fff;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .report-part-panel .report-part-panel-content {
+  min-height: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .report-part-panel .label-column .checkbox {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .report-part-title {
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .field-container-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .field-container-icon-plus {
+  right: -25px;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .child-panel {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.izenda .izenda-ReportPartBackSide .report-part-parent-panel .child-panel-expanded {
+  width: 100%;
+}
+
+.izenda .field-props-container {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+}
+
+.izenda .field-props-container .field-props-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  border-top: 1px solid #DEDEDE;
+}
+
+.izenda .field-props-container .field-props-content {
+  height: 100%;
+  padding-top: 82px;
+}
+
+.izenda .field-props-container .report-parts-ctrl .izenda-Dropdown {
+  width: 50%;
+  display: inline-block;
+}
+
+.izenda .field-props-container fieldset[disabled] button.active {
+  color: #EEE;
+}
+
+.izenda .report-part-form {
+  position: relative;
+}
+
+.izenda .report-part-form .tabs-navigation {
+  position: absolute;
+}
+
+.izenda .report-part-form .tab-panel {
+  height: 100%;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.izenda .report-part-form .tab-panel>div {
+  height: 100%;
+}
+
+.izenda .report-part-form .mce-tinymce {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.izenda .report-part-form .mce-tinymce .mce-container-body {
+  height: 100%;
+}
+
+.izenda .report-part-form .mce-tinymce .mce-edit-area {
+  position: absolute;
+  top: 0;
+  bottom: 37px;
+  width: 100%;
+  height: auto;
+}
+
+.izenda .report-part-form .mce-tinymce .mce-statusbar {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.izenda .report-part-form .report-part-form-visual {
+  position: relative;
+  height: 100%;
+}
+
+.izenda .report-part-form .report-part-form-html {
+  height: 100%;
+}
+
+.izenda .report-part-form .report-part-form-html textarea[name="form"] {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  resize: none;
+  outline: transparent;
+}
+
+.izenda .grant-total {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.izenda .grant-total .grand-table,
+.izenda .grant-total .table-body {
+  display: table;
+  border-collapse: collapse;
+}
+
+.izenda .grant-total .grand-row {
+  display: table-row;
+}
+
+.izenda .grant-total .grand-column {
+  display: table-cell;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.izenda .grant-total .table-cell-content {
+  padding-left: 9px;
+}
+
+.izenda .grant-total .grand-column .grand-table .grand-column {
+  border: none;
+  line-height: 40px;
+}
+
+.izenda .grant-total .grand-column .grand-table .grand-column.no-border-left {
+  border-left: none;
+}
+
+.izenda .grant-total .grand-column .grand-table .grand-row:first-child .grand-column {
+  border-top: none !important;
+}
+
+.izenda .grant-total .grand-column .grand-table .grand-column .grand-cell-content {
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.izenda .grant-total .report-part-grid-preview>.table>.table-header {
+  height: 0;
+}
+
+.izenda .grant-total .table-header .table-cell,
+.izenda .grant-total .table-header .table-cell {
+  visibility: hidden;
+}
+
+.izenda .grant-total .table-body .table-cell {
+  background: none !important;
+  border-right: none;
+}
+
+.izenda .grant-total.has-separator {
+  margin-left: 16px;
+}
+
+.izenda .grant-total .blank-line {
+  height: 1px;
+}
+
+.izenda .paginator.with-border {
+  border: 1px solid #DEDEDE;
+  margin-top: 10px;
+}
+
+.izenda .pageBreak {
+  page-break-after: always;
+}
+
+.izenda .izenda-GridFrontSide {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.izenda .separator-grid {
+  box-shadow: none;
+  padding-top: 10px;
+}
+
+.izenda .separator-grid .separator-header {
+  padding: 0;
+  padding-top: 10px;
+  position: relative;
+}
+
+.izenda .separator-grid .separator-header .collapse-icon {
+  position: absolute;
+}
+
+.izenda .separator-grid .separator-header .header-group {
+  padding-left: 30px;
+}
+
+.izenda .separator-grid .separator-body .report-part-grid-preview .custom-table {
+  margin-left: 15px;
+}
+
+.izenda .separator-grid .header-group {
+  padding-left: 15px;
+}
+
+.izenda .report-part-grid-preview .custom-table {
+  margin-left: 0;
+  background-color: transparent;
+}
+
+.izenda .report-part-grid-preview .custom-table .table-row,
+.izenda .report-part-grid-preview .custom-table .table-cell,
+.izenda .report-part-grid-preview .custom-table .table-header,
+.izenda .report-part-grid-preview .custom-table .table-cell-group,
+.izenda .report-part-grid-preview .custom-table .table-body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  border-spacing: 0px;
+}
+
+.izenda .report-part-grid-preview .custom-table a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.izenda .report-part-grid-preview .custom-table a[href] {
+  text-decoration: underline;
+}
+
+.izenda .report-part-grid-preview .custom-table a:not([href]) {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+
+.izenda .report-part-grid-preview .custom-table .body-table {
+  max-height: 300px;
+  height: auto;
+}
+
+.izenda .report-part-grid-preview .custom-table .custom-expand-collapse-icon {
+  color: #333;
+}
+
+.izenda .report-part-grid-preview .custom-table .sub-total {
+  font-weight: bold;
+}
+
+.izenda .report-part-header {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 15px;
+}
+
+.izenda .report-part-header a.btn {
+  background: transparent;
+  border: none;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.izenda .report-part-header .report-part-backside-header {
+  background-color: #EEE;
+  padding: 10px;
+  height: 40px;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .ReportPartHeader__context-menu {
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+  overflow: hidden;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.9);
+}
+
+.izenda .ReportPartHeader__context-menu .context-menu-list {
+  list-style: none;
+  text-transform: none;
+  max-width: 250px;
+  padding: 0;
+  margin: 0;
+}
+
+.izenda .ReportPartHeader__context-menu .context-menu-list li {
+  display: block;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.izenda .ReportPartHeader__context-menu .context-menu-list li:hover {
+  background: #E4E8EB;
+}
+
+.izenda .ReportPartHeader__context-menu .context-menu-list a {
+  color: #333;
+  padding: 5px 10px;
+}
+
+.izenda .ReportPartHeader__context-menu .context-menu-list span {
+  font-size: 1em;
+  padding: 0 5px;
+  color: #333;
+}
+
+.izenda .izenda-ReportPartHeader-content {
+  background-color: #b2cbdb;
+  padding: 5px;
+}
+
+.izenda .izenda-ReportPartHeader-content .form-control,
+.izenda .izenda-ReportPartHeader-content .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .izenda-ReportPartHeader-content .izenda-SearchTextBox-TextBox {
+  width: 100px;
+  margin-left: 5px;
+}
+
+.izenda .izenda-ReportPartHeader-content .izenda-ReportPartHeader-buttonAction {
+  display: inline-block;
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+
+.izenda .izenda-ReportPartHeader-content .izenda-ReportPartHeader-title {
+  display: inline-block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.izenda .izenda-ReportPartHeader-content .izenda-ReportPartHeader-record {
+  display: inline-block;
+  float: right;
+}
+
+.izenda .izenda-ReportPartHeader-content.small-size>div {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.izenda .izenda-ReportPartViewer .izenda-ReportPartFrontSideViewer-container .report-part-chart-front-side .chart-body {
+  overflow: visible;
+}
+
+.izenda .izenda-ReportHeader>div {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1280px) {
+  .izenda .izenda-ReportHeader .report-name {
+    padding-right: 0;
+  }
+}
+
+.izenda .izenda-ReportHeader .report-name>div {
+  height: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.izenda .izenda-ReportHeader .report-name>div .title {
+  margin-top: 6px;
+}
+
+.izenda .izenda-ReportHeader .preview-records {
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
+.izenda .izenda-ReportHeader .control-label {
+  min-width: 120px;
+}
+
+.izenda .izenda-ReportViewer .content-container .report-format-element:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.izenda .izenda-ReportViewer .content-container .report-format-element:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.izenda .izenda-ReportViewer .content-container .report-body {
+  padding-bottom: 15px;
+}
+
+.izenda .izenda-ReportViewer .content-container .report-body .panel-body {
+  overflow: hidden;
+}
+
+.izenda .izenda-ReportViewer .content-container .report-body,
+.izenda .izenda-ReportViewer .content-container .report-format-element {
+  background: #fff;
+}
+
+.izenda .izenda-ReportViewer .scrollable {
+  overflow: auto;
+}
+
+.izenda .izenda-ReportViewer .unscrollable {
+  overflow: hidden;
+}
+
+.izenda .izenda-ReportViewer .filters-container.stick {
+  position: fixed;
+  z-index: 10001;
+}
+
+.izenda .izenda-ReportViewer li.disabled-link a {
+  color: #CCC;
+}
+
+.izenda .izenda-ReportViewer .izenda-ReportViewer-FilterError {
+  padding-top: 30px;
+}
+
+.izenda .izenda-ReportViewer .izenda-ReportViewer-FilterError .izenda-ReportViewer-FilterList {
+  padding-left: 50px;
+}
+
+.izenda .view-mode-filter {
+  border: none;
+  box-shadow: none;
+}
+
+.izenda .view-mode-filter[aria-expanded="true"] {
+  margin: 0;
+}
+
+.izenda .view-mode-filter .panel-heading {
+  border-top: 1px solid #DEDEDE;
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.izenda .view-mode-filter .panel-heading[aria-expanded="false"] {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .view-mode-filter .panel-body {
+  padding: 0;
+}
+
+.izenda .view-mode-filter .field-props-content {
+  margin-top: -30px;
+}
+
+.izenda .izenda-ResetCssForm * {
+  -moz-box-sizing: initial;
+       box-sizing: initial;
+}
+
+.izenda .izenda-ResetCssForm table {
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.izenda .izenda-ResetCssForm table,
+.izenda .izenda-ResetCssForm tr,
+.izenda .izenda-ResetCssForm td,
+.izenda .izenda-ResetCssForm th,
+.izenda .izenda-ResetCssForm tbody,
+.izenda .izenda-ResetCssForm thead,
+.izenda .izenda-ResetCssForm tfoot {
+  page-break-inside: avoid;
+}
+
+.izenda .configuration-input {
+  position: relative;
+  padding-right: 25px;
+}
+
+.izenda .configuration-input>a {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-list {
+  width: 160px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-item {
+  padding: 6px 10px;
+  height: 30px;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-item a,
+.izenda .izenda-SmartTag .izenda-SmartTag-item a:hover {
+  color: #333;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-item:hover {
+  background-color: #f5f5f5;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-item:hover .izenda-SmartTag-hover {
+  display: block;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-item:hover .izenda-SmartTag-hover .izenda-DateTimeItem {
+  cursor: pointer;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-item:hover .izenda-SmartTag-hover .izenda-DateTimeItem:hover {
+  background-color: #f5f5f5;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-hover {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: -210px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-logo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.izenda .izenda-SmartTag .izenda-SmartTag-logo:after {
+  left: 100%;
+  top: 0;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  border-left-color: #fff;
+  border-width: 10px;
+  margin-top: 10px;
+}
+
+.izenda .subReport .reportFilters {
+  margin: 5px 0 10px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.izenda .subReport .reportFilters input {
+  margin-right: 5px;
+}
+
+.izenda .subReport .input-group {
+  padding: 8px;
+}
+
+.izenda .subReport .input-group label {
+  padding-right: 0;
+}
+
+.izenda .subReport .table {
+  margin-bottom: 10px;
+}
+
+.izenda .subReport .table .body-table {
+  height: 280px;
+}
+
+.izenda .izenda-ThresholdSettings {
+  width: 1200px;
+}
+
+.izenda .izenda-ThresholdSettings .modal-body {
+  padding: 0;
+}
+
+.izenda .threshold-settings .izenda-Threshold-AxisTitle {
+  width: 10%;
+}
+
+.izenda .threshold-settings .prop-control {
+  width: initial;
+}
+
+.izenda .threshold-settings .label-input {
+  width: 80%;
+  display: inline-block;
+}
+
+.izenda .threshold-settings .label-config {
+  width: 20%;
+  display: inline-block;
+}
+
+.izenda .threshold-settings .configuration {
+  width: 55%;
+  height: 100%;
+  border: none;
+  border-right: 1px solid #DEDEDE;
+}
+
+.izenda .threshold-settings .preview {
+  width: 45%;
+  height: 100%;
+  display: inline-block;
+  border: none;
+}
+
+.izenda .threshold-settings .threshold-dash-style .numeric-input {
+  display: inline-block;
+  width: 90%;
+}
+
+.izenda .threshold-settings .threshold-label-settings .form-group .prop-label {
+  width: 30%;
+  float: left;
+}
+
+.izenda .threshold-settings .threshold-label-settings .form-group .prop-control {
+  width: 70%;
+  float: right;
+}
+
+.izenda .threshold-settings .threshold-label-settings .font-format {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.izenda .threshold-settings .threshold-label-settings .font-style {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.izenda .threshold-settings .threshold-label-settings .text-color {
+  display: inline-block;
+  float: right;
+}
+
+.izenda .threshold-settings .table .table-cell-content {
+  padding: 10px 5px 10px 5px;
+}
+
+.izenda .threshold-config .modal-body {
+  overflow: auto;
+}
+
+.izenda .border-view-setting {
+  border-top: 1px solid #DEDEDE;
+  padding-top: 10px;
+}
+
+.izenda .border-view-setting .dropdown-menu {
+  min-width: 65px;
+}
+
+.izenda .border-view-setting .dropdown-menu>li>a {
+  padding-top: 3px;
+  padding-right: 10px;
+}
+
+.izenda .border-view-setting .custom-drop-down {
+  width: 65px;
+}
+
+.izenda .yaxis-combination>div {
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #DEDEDE;
+  padding: 10px;
+}
+
+.izenda .yaxis-combination>div label {
+  margin-top: 5px;
+}
+
+.izenda .yaxis-combination>div:last-child {
+  padding: 0;
+  border-bottom: none;
+}
+
+.izenda .yaxis-combination .show-total input[type="checkbox"] {
+  position: absolute;
+  top: 5px;
+  left: 19px;
+}
+
+.izenda .yaxis-combination .metric-dropdown-container {
+  margin-right: 25px;
+}
+
+.izenda .yaxis-combination .setting-dialog .style {
+  margin-top: 10px;
+}
+
+.izenda .yaxis-combination .setting-dialog .style span {
+  margin-top: 5px;
+}
+
+.izenda .yaxis-combination .setting-dialog .thickness {
+  margin-top: 10px;
+}
+
+.izenda .yaxis-combination .setting-dialog .thickness span {
+  margin-top: 5px;
+}
+
+.izenda .izenda-Recipient-Container {
+  position: relative;
+  border-radius: 4px;
+}
+
+.izenda .izenda-Recipient-Container a {
+  position: absolute;
+  top: 8px;
+  right: 2px;
+}
+
+.izenda .schedule {
+  margin: 10px;
+}
+
+.izenda .schedule .izenda-text-right {
+  text-align: right;
+}
+
+.izenda .schedule .izenda-text-bold {
+  font-weight: bold;
+}
+
+.izenda .schedule .no-padding-left {
+  padding-left: 0;
+}
+
+.izenda .schedule .group-schedule {
+  margin-left: 17px;
+}
+
+.izenda .schedule .group {
+  margin: 15px;
+}
+
+.izenda .schedule .border {
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.izenda .schedule .of {
+  float: left;
+  width: 10px;
+}
+
+.izenda .schedule hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.izenda .subscription-grid .overflow-text {
+  display: block;
+}
+
+.izenda .subscription-grid .search-input select,
+.izenda .subscription-grid .table-footer,
+.izenda .subscription-grid .paginator,
+.izenda .subscription-grid .table-header,
+.izenda .subscription-grid .table-header .table-cell {
+  background-color: #f5f5f5;
+}
+
+.izenda .subscription-grid select option {
+  background-color: #fff;
+}
+
+.izenda .subscription-grid .table {
+  background-color: #e4e8eb;
+}
+
+.izenda .report-subscription {
+  float: left;
+}
+
+.izenda .report-subscription .modal-content {
+  text-align: left;
+}
+
+.izenda .report-subscription .modal-content .modal-header,
+.izenda .report-subscription .modal-content .modal-footer {
+  background-color: #f5f5f5;
+}
+
+.izenda .report-subscription .modal-content button.btn {
+  margin: 0 10px 10px 10px;
+  border-radius: 4px;
+}
+
+.izenda .report-subscription.floatNone {
+  float: none;
+}
+
+.izenda .subscription .Izenda-Subscription-InstanceName {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.izenda .subscription .izenda-SubscriptionDesigner-Container {
+  height: 300px;
+}
+
+.izenda .subscription .tabs-navigation {
+  max-height: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.izenda .subscription .tabs.left-tab .tabs-menu-item {
+  text-align: center;
+  width: 50%;
+}
+
+.izenda .subscription .tabs.left-tab .tabs-menu-item a {
+  padding: 10px 20px;
+  border: 1px solid #DEDEDE;
+  text-transform: none;
+}
+
+.izenda .subscription .tab-panel {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.izenda .subscription .form-horizontal .form-group {
+  border-bottom: none;
+}
+
+.izenda .subscription .radio-label {
+  vertical-align: top;
+  padding-top: 2px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.izenda .subscription .izenda-FilterSubscription-hintIcon {
+  margin-top: 5px;
+}
+
+.izenda .izenda-SystemVariables .izenda-SystemVariables-linkable {
+  cursor: pointer;
+  color: #1c4e89;
+  text-decoration: none;
+}
+
+.izenda .izenda-AdvancedSettings .izenda-GridLayout {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.izenda .izenda-AdvancedSettings .form-horizontal .form-group {
+  height: 40px;
+  margin: 0;
+  padding: 5px;
+}
+
+.izenda .izenda-AdvancedSettings .form-horizontal .form-group .icon-info-circled {
+  display: none;
+}
+
+.izenda .izenda-AdvancedSettings .form-horizontal .form-group:hover .icon-info-circled {
+  display: inline;
+}
+
+.izenda .izenda-AdvancedSettings .form-horizontal .form-group:nth-child(even) {
+  background-color: #EFEFEF;
+}
+
+.izenda .izenda-AdvancedSettings .form-horizontal .form-group:nth-child(odd) {
+  background-color: #fff;
+}
+
+.izenda .izenda-AdvancedSettings .form-horizontal .form-group:hover {
+  background-color: #CEE5F3;
+}
+
+.izenda .izenda-AdvancedSettings .icon-info-circled,
+.izenda .izenda-AdvancedSettings .icon-ccw {
+  color: #b2cbdb;
+  cursor: pointer;
+}
+
+.izenda .izenda-AdvancedSettings .icon-info-circled:hover,
+.izenda .izenda-AdvancedSettings .icon-ccw:hover {
+  color: #10427c;
+}
+
+.izenda .izenda-CategoryGrid-content {
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-CategoryGrid-content .izenda-CategoryGrid-row:nth-child(odd) {
+  background-color: #EFEFEF;
+}
+
+.izenda .izenda-CategoryGrid-content .izenda-CategoryGrid-row:hover {
+  background-color: #CEE5F3;
+}
+
+.izenda .izenda-CategoryGrid-header {
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-CategoryGrid-header .icon-info-circled {
+  color: #b2cbdb;
+  display: none;
+}
+
+.izenda .izenda-CategoryGrid-header .icon-info-circled:hover {
+  color: #10427c;
+}
+
+.izenda .izenda-CategoryGrid-header .column-left:hover .icon-info-circled {
+  display: inline;
+}
+
+.izenda .izenda-ConnectionList-content ul {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.izenda .izenda-ConnectionList-content .connection-string-item {
+  list-style: none;
+  cursor: pointer;
+}
+
+.izenda .izenda-ConnectionList-content .connection-string-item:hover,
+.izenda .izenda-ConnectionList-content .connection-string-item .selected {
+  background: #EFEFEF;
+}
+
+.izenda .izenda-ConnectionList-content .truncate {
+  min-width: 235px;
+  padding: 10px;
+}
+
+.izenda .izenda-ConnectionList-content .connection-string-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 47%;
+}
+
+.izenda .connection-string-validation-container .icon-flash {
+  height: 25px;
+}
+
+.izenda .connection-string-validation-container .test-container {
+  text-align: right;
+}
+
+.izenda .connection-string-validation-container .status-icon {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+  float: right;
+  margin-right: -35px;
+  font-size: 20px;
+  position: absolute;
+  right: 50px;
+}
+
+.izenda .connection-string-validation-container .hide {
+  visibility: hidden;
+}
+
+.izenda .connection-string-validation-container .show {
+  visibility: visible;
+}
+
+.izenda .connection-string-validation-container .empty {
+  height: 18px;
+}
+
+.izenda .connection-string-validation-container .connection-string-builder {
+  color: #1c4e89;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.izenda .connection-string-builder[disabled] {
+  cursor: not-allowed;
+}
+
+.izenda .icon-hidden {
+  display: none;
+}
+
+.izenda .static-message {
+  min-height: 23px !important;
+  min-width: 67%;
+}
+
+.izenda .connection-string-validation-container .has-success {
+  border-color: #7ED321;
+  color: #7ED321;
+}
+
+.izenda .connection-string-validation-container .has-error {
+  border-color: #f14711;
+  color: #f14711;
+}
+
+.izenda .connection-string-validation-container .valid-connection {
+  top: 6px;
+  right: 5px;
+}
+
+.izenda .connection-string-validation-container .izenda-ConnectringString-input {
+  padding-right: 25px;
+}
+
+.izenda .connection-string-validation-container .izenda-ConnectringString-wrapper {
+  width: -webkit-calc(100% - 60px);
+  width: calc(100% - 60px);
+}
+
+.izenda .izenda-CopyManagement .row.section-connect,
+.izenda .izenda-CopyManagement .izenda-GridLayout .section-connect.izenda-GridLayout-Row,
+.izenda-GridLayout .izenda .izenda-CopyManagement .section-connect.izenda-GridLayout-Row,
+.izenda .izenda-CopyManagement .izenda-GridLayout .section-connect.izenda-GridLayout-Row_full,
+.izenda-GridLayout .izenda .izenda-CopyManagement .section-connect.izenda-GridLayout-Row_full {
+  margin: 0;
+}
+
+.izenda .izenda-CopyManagement input[type="checkbox"] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.izenda .izenda-CopyManagement .padding-left {
+  padding-left: 10px;
+}
+
+.izenda .izenda-CopyManagement .u_marginBottomSmall {
+  margin-bottom: 5px !important;
+}
+
+.izenda .workspace-panel {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.izenda .workspace-panel .header-panel {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 10px;
+  padding-bottom: 0;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.izenda .workspace-panel .btn-add-connection {
+  white-space: nowrap;
+  display: block;
+}
+
+.izenda .workspace-panel .btn-add-connection:hover {
+  color: #1c4e89;
+}
+
+.izenda .workspace-panel .workspace-item-custom {
+  list-style: none;
+  cursor: pointer;
+}
+
+.izenda .workspace-panel .workspace-item-custom:hover {
+  background: #EFEFEF;
+}
+
+.izenda .workspace-panel .selected {
+  background: #EFEFEF;
+}
+
+.izenda .workspace-panel .list-workspace-item {
+  overflow: hidden;
+  height: 100%;
+  padding-top: 87px;
+  padding-top: 120px;
+}
+
+.izenda .workspace-panel .list-workspace-item ul {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.izenda .workspace-panel .truncate {
+  min-width: 235px;
+  position: relative;
+  padding: 10px;
+}
+
+.izenda .workspace-panel .icon-cancel {
+  position: absolute;
+  right: 10px;
+}
+
+.izenda .workspace-panel .workspace-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.izenda .workspace-panel .modal-body {
+  white-space: normal;
+}
+
+.izenda .workspace-panel .checkbox-show-workspace {
+  margin-top: 10px;
+}
+
+.izenda .workspace-panel .checkbox-show-workspace input {
+  margin-left: 10px;
+}
+
+.izenda .workspace-panel .checkbox-show-workspace span {
+  padding-left: 5px;
+}
+
+.izenda .workspace-tree .title {
+  font-size: 14px;
+}
+
+.izenda .workspace-tree .title>span {
+  padding-left: 10px;
+}
+
+.izenda .workspace-tree .search-box {
+  padding-top: 0;
+  margin: 6px 10px 6px 10px;
+}
+
+.izenda .workspace-tree .search-box .input-group .form-control,
+.izenda .workspace-tree .search-box .input-group .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .workspace-tree .search-box .input-group .izenda-SearchTextBox-TextBox {
+  border-radius: 4px;
+}
+
+.izenda .workspace-tree>.panel-body {
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper {
+  height: 305px;
+  overflow: auto;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .checkbox {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .checkbox label {
+  max-width: 90%;
+  padding-left: 10px;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .list-group {
+  padding-left: 10px;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .panel-body {
+  padding-left: 15px;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .panel-body:after,
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .panel-body:before {
+  content: none;
+}
+
+.izenda .workspace-tree>.panel-body>.workspace-tree-wraper .datasource .panel-heading {
+  padding: 0;
+}
+
+.izenda .workspace-tree>.panel-body>.izenda-advancedCopyTree {
+  height: 425px;
+}
+
+.izenda .workspace-tree input[type="checkbox"] {
+  position: relative;
+  margin-right: 0;
+  top: 2px;
+}
+
+.izenda .workspace-container.disabled-elm .workspace-tree-wraper,
+.izenda .disabled-link a.workspace-container .workspace-tree-wraper,
+.izenda fieldset[disabled] .workspace-container.form-control .workspace-tree-wraper,
+.izenda fieldset[disabled] .izenda-SearchTextBox .workspace-container.izenda-SearchTextBox-TextBox .workspace-tree-wraper,
+.izenda-SearchTextBox .izenda fieldset[disabled] .workspace-container.izenda-SearchTextBox-TextBox .workspace-tree-wraper,
+.izenda fieldset[disabled] button.workspace-container .workspace-tree-wraper,
+.izenda fieldset[disabled] a.workspace-container .workspace-tree-wraper {
+  overflow: hidden;
+}
+
+.izenda .workspace-container .panel-heading {
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-runCopyTree {
+  border-radius: 4px;
+  height: 320px;
+}
+
+.izenda .izenda-sourceDestination {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.izenda .datasource-tree .icon-toggle-triangle {
+  margin-left: 10px;
+}
+
+.izenda .datasource-tree .title {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.izenda .datasource-tree .title>span {
+  padding-left: 10px;
+}
+
+.izenda .datasource-tree .search-box {
+  padding: 10px 15px;
+  border-top: 1px solid #DEDEDE;
+  border-bottom: 1px solid #DEDEDE;
+  overflow: hidden;
+}
+
+.izenda .datasource-tree .search-box .input-group .form-control,
+.izenda .datasource-tree .search-box .input-group .izenda-SearchTextBox .izenda-SearchTextBox-TextBox,
+.izenda-SearchTextBox .izenda .datasource-tree .search-box .input-group .izenda-SearchTextBox-TextBox {
+  border-radius: 4px;
+}
+
+.izenda .datasource-tree>.panel-body {
+  padding: 0;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper {
+  height: 445px;
+  overflow: auto;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource {
+  margin-bottom: 0px;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource .checkbox {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource .list-group {
+  padding-left: 20px;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource .panel-body {
+  padding-left: 15px;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource .panel-body:after,
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource .panel-body:before {
+  content: none;
+}
+
+.izenda .datasource-tree>.panel-body>.datasource-tree-wraper .datasource .panel-heading {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.izenda .datasource-tree .list-group .checkbox .tree-item {
+  padding-left: 40px;
+}
+
+.izenda .datasource-container.disabled-elm .datasource-tree-wraper,
+.izenda .disabled-link a.datasource-container .datasource-tree-wraper,
+.izenda fieldset[disabled] .datasource-container.form-control .datasource-tree-wraper,
+.izenda fieldset[disabled] .izenda-SearchTextBox .datasource-container.izenda-SearchTextBox-TextBox .datasource-tree-wraper,
+.izenda-SearchTextBox .izenda fieldset[disabled] .datasource-container.izenda-SearchTextBox-TextBox .datasource-tree-wraper,
+.izenda fieldset[disabled] button.datasource-container .datasource-tree-wraper,
+.izenda fieldset[disabled] a.datasource-container .datasource-tree-wraper {
+  overflow: hidden;
+}
+
+.izenda .izenda-DataModel {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.izenda .izenda-DataModel-Middle {
+  height: 100%;
+}
+
+.izenda .izenda-DataModel-Middle .panel-heading {
+  padding: 0;
+}
+
+.izenda .izenda-DataModel-Middle a {
+  display: block;
+  color: #000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.izenda .izenda-DataModel-Middle a:hover,
+.izenda .izenda-DataModel-Middle a.active {
+  background-color: #EEE;
+  color: #10427c;
+}
+
+.izenda .izenda-SubTable {
+  margin-top: 10px;
+}
+
+.izenda .izenda-SubTable .title {
+  width: 100%;
+  display: table;
+  background-color: #b2cbdb;
+  padding: 5px;
+}
+
+.izenda .izenda-SubTable .title .content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.izenda .izenda-SubTable .title .db-name {
+  display: inline-block;
+  color: #1c4e89;
+}
+
+.izenda .izenda-SubTable .title button {
+  background-color: #1c4e89;
+  color: #fff;
+}
+
+.izenda .izenda-QuerySource .source-name {
+  color: #1c4e89;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.izenda .izenda-QuerySource .filterValueIcon {
+  margin-top: -25px;
+}
+
+.izenda .izenda-QuerySource .filterValueText {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.izenda .izenda-QuerySource .center {
+  margin: 0px;
+}
+
+.izenda .izenda-QuerySource .popover-container {
+  width: 500px;
+  position: fixed;
+}
+
+.izenda .izenda-QuerySource .popover-content {
+  padding: 0;
+}
+
+.izenda .izenda-QuerySource .icon-cancel {
+  cursor: pointer;
+}
+
+.izenda .modal-relationship-size {
+  width: 1260px;
+}
+
+.izenda .modal-relationship-size .modal-body {
+  height: 350px;
+}
+
+.izenda .relationship {
+  position: relative;
+}
+
+.izenda .relationship .search-panel {
+  margin-bottom: 25px;
+}
+
+.izenda .relationship .source-name {
+  color: #1c4e89;
+  text-decoration: underline;
+}
+
+.izenda .relationship .form-group {
+  margin-bottom: 0;
+}
+
+.izenda .relationship .help-block {
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+.izenda .relationship .filterValueIcon {
+  margin-top: -25px;
+}
+
+.izenda .relationship .filterValueText {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.izenda .relationship .equal-sign-in-cell {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.izenda .relationship .action-in-cell .error-icon-size {
+  font-size: 20px;
+}
+
+.izenda .relationship .has-error .invalid-control {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  border: 1px solid #f14711;
+  border-radius: 4px;
+}
+
+.izenda .relationship .has-error .invalid-hint {
+  font-size: 11px;
+}
+
+.izenda .relationship .header-table i {
+  padding: 0;
+}
+
+.izenda .relationship .validation-border {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.izenda .schema {
+  height: 100%;
+}
+
+.izenda .schema .action {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.izenda .schema .action button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-left: 2px;
+}
+
+.izenda .schema .canvas_container {
+  border: 1px solid #EEE;
+  height: 100%;
+  padding: 30px 10px 10px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.izenda .schema .canvas_container.grabbing {
+  cursor: pointer;
+}
+
+.izenda .izenda-LicenseInfo:not(.disabled-elm):not(.izenda .disabled-link a):not(.izenda fieldset[disabled] .form-control):not(.izenda fieldset[disabled] .izenda-SearchTextBox .izenda-SearchTextBox-TextBox):not(.izenda-SearchTextBox .izenda fieldset[disabled] .izenda-SearchTextBox-TextBox):not(.izenda fieldset[disabled] button):not(.izenda fieldset[disabled] a) .current-module label {
+  color: #73aa2c;
+}
+
+.izenda .izenda-LicenseInfo:not(.disabled-elm):not(.izenda .disabled-link a):not(.izenda fieldset[disabled] .form-control):not(.izenda fieldset[disabled] .izenda-SearchTextBox .izenda-SearchTextBox-TextBox):not(.izenda-SearchTextBox .izenda fieldset[disabled] .izenda-SearchTextBox-TextBox):not(.izenda fieldset[disabled] button):not(.izenda fieldset[disabled] a) .previous-module {
+  border-right: 1px solid #EEE;
+}
+
+.izenda .izenda-LicenseInfo:not(.disabled-elm):not(.izenda .disabled-link a):not(.izenda fieldset[disabled] .form-control):not(.izenda fieldset[disabled] .izenda-SearchTextBox .izenda-SearchTextBox-TextBox):not(.izenda-SearchTextBox .izenda fieldset[disabled] .izenda-SearchTextBox-TextBox):not(.izenda fieldset[disabled] button):not(.izenda fieldset[disabled] a) .previous-module label {
+  color: #ff9b00;
+}
+
+.izenda .izenda-LicenseInfo.disabled-elm .panel-heading label,
+.izenda .disabled-link a.izenda-LicenseInfo .panel-heading label,
+.izenda fieldset[disabled] .izenda-LicenseInfo.form-control .panel-heading label,
+.izenda fieldset[disabled] .izenda-SearchTextBox .izenda-LicenseInfo.izenda-SearchTextBox-TextBox .panel-heading label,
+.izenda-SearchTextBox .izenda fieldset[disabled] .izenda-LicenseInfo.izenda-SearchTextBox-TextBox .panel-heading label,
+.izenda fieldset[disabled] button.izenda-LicenseInfo .panel-heading label,
+.izenda fieldset[disabled] a.izenda-LicenseInfo .panel-heading label {
+  color: #EEE;
+}
+
+.izenda .izenda-LicenseInfo .panel-body .previous-module {
+  border-right: 1px solid #EEE;
+}
+
+.izenda .izenda-LicenseInfo .panel-body .modules .module {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.izenda .izenda-LicenseInfo .panel-body .duration {
+  padding-bottom: 10px;
+}
+
+.izenda .izenda-LicenseChecker-iconMenu {
+  display: none;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1279px) {
+  .izenda .izenda-LicenseChecker-iconMenu {
+    display: block;
+  }
+}
+
+.izenda .izenda-LicenseValidation .izenda-LicenseChecker-validationInput {
+  padding-right: 25px;
+}
+
+.izenda .izenda-PasswordOptions .modal-body {
+  padding: 25px;
+}
+
+.izenda .izenda-PasswordOptions .izenda-PasswordLinkCustom {
+  padding-right: 25px;
+  width: 100%;
+}
+
+.izenda .izenda-PasswordOptions .izenda-PasswordLinkCustom .izenda-IconCopyClipBoard {
+  top: 30%;
+}
+
+.izenda .izenda-PasswordOptions .izenda-Recipient-Container .rw-multiselect-wrapper ul {
+  float: left;
+}
+
+.izenda .izenda-PasswordOptions .izenda-Recipient-Container .rw-multiselect-wrapper input {
+  float: left;
+}
+
+.izenda .izenda-Permission .izenda-PermissionCategory-Header {
+  background-color: #EFEFEF;
+}
+
+.izenda .izenda-Permission .izenda-PermissionCategory-Icon {
+  width: 15px;
+}
+
+.izenda .izenda-Permission .izenda-PermissionCategory-group label,
+.izenda .izenda-Permission .izenda-PermissionCategory-group_left label {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.izenda .izenda-Permission .izenda-PermissionCategory-group span,
+.izenda .izenda-Permission .izenda-PermissionCategory-group_left span {
+  padding-left: 5px;
+}
+
+.izenda .izenda-Permission .izenda-PermissionCategory-group_left {
+  padding-right: 25px;
+}
+
+.izenda .izenda-Permission .izenda-GridLayout .izenda-PermissionCategory-SubCategory {
+  padding-left: 25px;
+}
+
+.izenda .izenda-Permission .izenda-GridLayout .izenda-PermissionCategory-SubSubCategory {
+  padding-left: 35px;
+}
+
+.izenda .izenda-Permission .izenda-PermissionBreadcrumb {
+  height: 40px;
+  overflow: hidden;
+}
+
+.izenda .izenda-Permission .izenda-PermissionBreadcrumb_active {
+  background-color: #b2cbdb;
+  color: #1c4e89;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.izenda .izenda-Permission .izenda-GridLayout-Custom .izenda-GridLayout-Row,
+.izenda .izenda-Permission .izenda-GridLayout-Custom .izenda-GridLayout .izenda-GridLayout-Row_full,
+.izenda-GridLayout .izenda .izenda-Permission .izenda-GridLayout-Custom .izenda-GridLayout-Row_full {
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-Permission .izenda-GridLayout-Custom :not(:last-child) {
+  margin-bottom: 0;
+}
+
+.izenda .izenda-Permission .izenda-UserRolePermision {
+  height: 250px;
+}
+
+.izenda .izenda-Permission .izenda-UserRolePermision .izenda-UserRolePermision-ControllArrow {
+  z-index: 1;
+}
+
+.izenda .izenda-Permission .izenda-CategoryPermission {
+  height: 250px;
+}
+
+.izenda .izenda-Permission .izenda-CategoryPermission .izenda-CategoryPermission-ControllArrow {
+  z-index: 1;
+}
+
+.izenda .izenda-Permission .izenda-CategoryPermission .izenda-CategoryPermission-ControllArrow.izenda-CategoryPermission-Available_Visible {
+  left: 33.33333%;
+  top: 50%;
+  -webkit-transform: translate(-33.33333%, -50%);
+      -ms-transform: translate(-33.33333%, -50%);
+          transform: translate(-33.33333%, -50%);
+}
+
+.izenda .izenda-Permission .izenda-CategoryPermission .izenda-CategoryPermission-ControllArrow.izenda-CategoryPermission-Visible_Save {
+  left: 66.66667%;
+  top: 50%;
+  -webkit-transform: translate(-66.66667%, -50%);
+      -ms-transform: translate(-66.66667%, -50%);
+          transform: translate(-66.66667%, -50%);
+}
+
+.izenda .izenda-Permission .izenda-DataGridSearch {
+  width: 280px;
+}
+
+.izenda .izenda-PermissionSummaryTab {
+  right: 0;
+}
+
+.izenda .izenda-PermissionSummaryTab span {
+  margin-left: 5px;
+}
+
+.izenda .izenda-PermissionSummaryTab .izenda-Permission-FirstChild {
+  margin-left: 30px;
+}
+
+.izenda .izenda-PermissionSummaryTab .izenda-Permission-SecondChild {
+  margin-left: 50px;
+}
+
+.izenda .izenda-PermissionSummaryTab .panel-heading {
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.izenda .izenda-PermissionSummaryTab .izenda-HeaderCustomLabelHeight {
+  height: 63px;
+}
+
+.izenda .izenda-PermissionSummaryTab .izenda-PermissionGridSmallColumn {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.izenda .izenda-PermissionSummaryTab .grid-small-column {
+  padding: 7px 5px;
+}
+
+.izenda .izenda-PermissionSummaryTab .grid-medium-column {
+  padding: 27px 5px;
+}
+
+.izenda .izenda-PermissionSummaryTab .grid-medium-column-has-content {
+  padding: 16px 5px;
+  text-align: left;
+}
+
+.izenda .izenda-PermissionSummaryTab .panel .icon-toggle-triangle {
+  margin: 0;
+}
+
+.izenda .izenda-PermissionSummaryTab .panel-heading {
+  margin: 0;
+  border: none;
+}
+
+.izenda .izenda-PermissionSummaryTab .panel-body {
+  padding: 0;
+}
+
+.izenda .izenda-PermissionSummaryTab .panel-title {
+  font-size: 14px;
+  font-weight: bold !important;
+}
+
+.izenda .izenda-PermissionSummaryTab input[type="radio"],
+.izenda .izenda-PermissionSummaryTab input[type="checkbox"] {
+  margin: 0;
+  margin-bottom: 2px;
+  vertical-align: middle;
+}
+
+.izenda .izenda-PermissionSummaryTab .u_borderAll {
+  border: 1px solid #CCC !important;
+}
+
+.izenda .izenda-PermissionSummaryTab .u_borderLeft {
+  border-left: 1px solid #CCC;
+}
+
+.izenda .izenda-PermissionSummaryTab .u_borderRight {
+  border-right: 1px solid #CCC;
+}
+
+.izenda .izenda-PermissionSummaryTab .u_borderTop {
+  border-top: 1px solid #CCC;
+}
+
+.izenda .izenda-PermissionSummaryTab .u_borderBottom {
+  border-bottom: 1px solid #CCC;
+}
+
+.izenda .izenda-PermissionSummaryTab .u_noBorderTop {
+  border-top: none !important;
+}
+
+.izenda .izenda-PermissionSummaryTab .izenda-PermissionSummaryTab-TopRow {
+  height: 63px;
+}
+
+.izenda .izenda-PermissionSummaryTab .izenda-PermissionSummaryTab-Detail {
+  height: -webkit-calc(100% - 63px);
+  height: calc(100% - 63px);
+}
+
+.izenda .izenda-RoleItem {
+  overflow: hidden;
+  min-width: 210px;
+}
+
+.izenda .izenda-Role-content {
+  top: 50px;
+}
+
+.izenda .izenda-Role-content .tabs .tab-panel {
+  margin: 0;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.izenda .izenda-RoleName {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.izenda .izenda-RoleName .izenda-RoleName-label {
+  display: table-cell;
+  width: 100px;
+}
+
+.izenda .izenda-RoleName .izenda-RoleName-control {
+  display: table-cell;
+  width: 100%;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchCriteria-Header,
+.izenda .izenda-Scheduling .izenda-SearchCriteria-Footer,
+.izenda .izenda-Scheduling .izenda-SearchResult-Header {
+  background: #EEE;
+  line-height: 30px;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchCriteria-Body {
+  background: #fff;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchCriteria-Body .izenda-SearchCriteria_ReportType .izenda-Dropdown {
+  background: #EEE;
+  width: 10%;
+  display: inline-block;
+  float: left;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchCriteria-Body .izenda-SearchCriteria_ReportType div.Select {
+  width: 90%;
+  border-top-left-radius: initial;
+  border-bottom-left-radius: inherit;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchCriteria-Body .rw-multiselect-wrapper span {
+  padding-left: 5px;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchResult .izenda-SearchResult_Affix {
+  background: #fff;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchResult .izenda-SearchResult_Affix .table-header {
+  background: #EEE;
+}
+
+.izenda .izenda-Scheduling .izenda-SearchResult .table-cell-content {
+  word-wrap: break-word;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .izenda-SecurityPoliciesPanel {
+  padding-bottom: 40px;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .izenda-ActionBarRight {
+  padding-right: 10px;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .panel {
+  background: #e4e8eb;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .panel .panel-heading {
+  background: #EEE;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .panel .panel-body {
+  padding: 0;
+  background: #fff;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .panel .panel-body .izenda-CustomInput {
+  width: 90px;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .panel .panel-body .izenda-CustomInput-Position {
+  margin-left: 42px;
+  margin-left: 42px;
+  width: 90px;
+}
+
+.izenda .izenda-SecurityPoliciesDetail .izenda-ItemContentHeight {
+  line-height: 40px;
+}
+
+.izenda .izenda-SettingLevel {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.izenda .izenda-SettingLevel .form-inline {
+  padding: 5px 10px;
+  background: #fff;
+}
+
+.izenda .izenda-SettingLevel .izenda-Dropdown {
+  width: 100px;
+}
+
+.izenda .izenda-TenantManagement .panel-header-custom .tabs {
+  height: 100%;
+}
+
+.izenda .izenda-TenantManagement .panel-header-custom .tabs nav.tabs-navigation,
+.izenda .izenda-TenantManagement .panel-header-custom .tabs ul.tabs-menu {
+  background-color: #EFEFEF;
+}
+
+.izenda .izenda-TenantManagement .panel-header-custom .tabs .tab-panel {
+  margin: 0;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.izenda .izenda-TenantManagement .panel-header-custom .tabs article.tab-panel .panel {
+  box-shadow: none;
+}
+
+.izenda .izenda-TenantManagement .panel-header-custom .panel-body {
+  padding: 0;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantList-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantList-content ul li {
+  cursor: pointer;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantList-content ul li:hover,
+.izenda .izenda-TenantManagement .izenda-TenantList-content ul li .selected {
+  background: #EFEFEF;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantList-content .item {
+  min-width: 240px;
+  padding: 10px;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantList-content .tenant-name {
+  display: inline-block;
+  width: 65%;
+}
+
+.izenda .izenda-TenantManagement .Izenda-TenantDetail_GridModule {
+  margin-left: 90px;
+}
+
+.izenda .izenda-TenantManagement .Izenda-TenantDetail_GridModule input {
+  margin-right: 10px;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantStatus {
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+.izenda .izenda-TenantManagement .izenda-TenantStatus-Deactivate {
+  color: #5cb85c;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UsersPanelLeft {
+  right: 10px;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UsersPanelRight {
+  left: 10px;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UserTable {
+  border: 1px solid #DEDEDE;
+  height: 300px;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UserTable .izenda-CustomContent-Container {
+  height: 200px;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UserTable .izenda-CustomContainerTable {
+  padding: 5px 10px;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UserTable .izenda-CustomContainerTable .izenda-CustomRow {
+  padding-top: 10px;
+}
+
+.izenda .izenda-UsersRoleSetup .izenda-UserTable .izenda-CustomContainerTable .izenda-CustomRow .izenda-CustomCheckBox {
+  margin-right: 5px;
+}
+
+.izenda .izenda-MiddlePanel-content .izenda-UserItem .izenda-UserStatus {
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+.izenda .izenda-MiddlePanel-content .izenda-UserItem .izenda-UserStatus-Deactivate {
+  color: #5cb85c;
+}
+
+.izenda .izenda-UserSetupMainContent .panel-header-custom {
+  padding: 10px;
+}
+
+.izenda .izenda-UserSetupMainContent .izenda-HeaderInformation {
+  height: 30px;
+  padding: 5px;
+}
+
+.izenda .izenda-UserSetupMainContent .izenda-HeaderInformation .izenda-CustomHeaderColor {
+  padding-left: 10px;
+}
+
+.izenda .izenda-UserSetupMainContent .izenda-HeaderInformation .izenda-ActivateUser {
+  color: #73aa2c;
+}
+
+.izenda .izenda-UserSetupMainContent .izenda-HeaderInformation .izenda-InactivateUser {
+  color: red;
+}
+
+.izenda .izenda-UserSetupMainContent .izenda-HeaderActive {
+  background: #C9DFAB;
+}
+
+.izenda .izenda-UserSetupMainContent .izenda-HeaderInActive {
+  background: #ff8;
+}
+
+.izenda .izenda-CopyManagement .btn-general {
+  margin-left: 15px;
+}
+
+.izenda .izenda-CopyManagement .without-padding {
+  padding-left: 0px;
+}
+
+.izenda .izenda-CopyManagement .header .btn {
+  margin-left: 10px;
+}
+
+.izenda .izenda-CopyManagement .izenda-SaveWorkspacePopup textarea.izenda-Description {
+  resize: none;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .panel-body {
+  padding: 0;
+  height: 357px;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .Select--multi {
+  padding: 5px 10px;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .ready-to-copy {
+  color: #5cb85c;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .need-validated {
+  color: #fc0;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .validation-error {
+  color: red;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .authentication-missing {
+  color: #90c;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .icon-disabled {
+  color: #DEDEDE;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .icon-info-circled {
+  margin-left: 5px;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .panel-heading {
+  margin-top: 10px;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .select-box {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .icon-ok {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .icon-setting {
+  cursor: pointer;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .icon-cancel {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .izenda-DatasourceTenantsDetail .table-body {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.izenda .izenda-CopyManagementDestinationGrid .table-body {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.izenda .header-section .panel-heading {
+  cursor: pointer;
+}
+
+.izenda .header-section fieldset.panel-body {
+  border-top: 1px solid #DEDEDE;
+}
+
+.izenda .header-section fieldset.panel-body .izenda-GridLayout-Row,
+.izenda .header-section fieldset.panel-body .izenda-GridLayout .izenda-GridLayout-Row_full,
+.izenda-GridLayout .izenda .header-section fieldset.panel-body .izenda-GridLayout-Row_full {
+  line-height: 30px;
+}
+
+.izenda .header-section .panel-footer {
+  background: none;
+}
+
+.izenda .header-section a.custom-button {
+  border-color: #fff;
+}
+
+.izenda .header-section .izenda-EditDesciption {
+  width: 100%;
+  padding-right: 100px;
+}
+
+.izenda .header-section .izenda-EditDesciption span {
+  position: absolute;
+}
+
+.izenda .header-section .date-text {
+  color: #999;
+}
+
+.izenda .workspace-header {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.izenda .izenda-CopyManagementMappings .panel-heading {
+  height: 50px;
+}
+
+.izenda .izenda-CopyManagementMappings .panel-heading button {
+  cursor: pointer;
+}
+
+.izenda .izenda-CopyManagementMappings fieldset.panel-body {
+  border-top: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-CopyManagementMappings fieldset.panel-body .izenda-GridLayout-Row,
+.izenda .izenda-CopyManagementMappings fieldset.panel-body .izenda-GridLayout .izenda-GridLayout-Row_full,
+.izenda-GridLayout .izenda .izenda-CopyManagementMappings fieldset.panel-body .izenda-GridLayout-Row_full {
+  line-height: 30px;
+}
+
+.izenda .izenda-CopyManagementMappings .panel-body {
+  padding: 0px;
+}
+
+.izenda .izenda-CopyManagementMappings .panel-footer {
+  background: none;
+}
+
+.izenda .izenda-CopyManagementMappings select {
+  width: 100%;
+  min-width: 0;
+}
+
+.izenda .izenda-CopyManagementMappings .icon-cancel {
+  cursor: pointer;
+}
+
+.izenda .izenda-CopyManagementMappings .Select {
+  padding-bottom: 5px;
+}
+
+.izenda .izenda-CopyManagementMappings .table-header .nested-table .table-cell-group-header {
+  font-style: italic;
+}
+
+.izenda .izenda-CopyManagementMappings .table-header .nested-table .table-cell-group-header .table-cell {
+  background-color: #fff;
+}
+
+.izenda .izenda-CopyManagementMappings .table-header .nested-table .table-row {
+  font-weight: bold;
+}
+
+.izenda .izenda-CopyManagementMappings .action-column {
+  text-align: center;
+}
+
+.izenda .izenda-CopyManagementMappings .table.default-table {
+  border: 0;
+  border-top: 1px solid #DEDEDE;
+}
+
+.izenda .izenda-reportContainer {
+  height: 245px;
+}
+
+.izenda .izenda-dashboardContainer {
+  height: 305px;
+}
+
+.izenda .izenda-ReportConfiguration .izenda-ReportConfiguration-control,
+.izenda .izenda-ReportConfiguration .numeric-input {
+  display: inline-block;
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}

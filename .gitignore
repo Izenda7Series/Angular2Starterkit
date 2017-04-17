@@ -1,0 +1,16 @@
+obj
+packages
+bin
+.vs
+izendadb.config
+*.ORIG
+*.BACKUP
+*.LOCAL
+*.REMOTE
+
+/WebApi2StarterKit/WebApi2StarterKit/bin
+/WebApi2StarterKit/WebApi2StarterKit/IzendaReferences
+/WebApi2StarterKit/WebApi2StarterKit/IzendaResources
+/WebApi2StarterKit/WebApi2StarterKit/Scripts/izenda
+/WebApi2StarterKit/WebApi2StarterKit/logs
+/Angular2StarterKitWeb/node_modules
