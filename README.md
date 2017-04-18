@@ -34,10 +34,10 @@ The Angular2Starterkit illustrates the concepts of integrating Izenda into Angul
 Create the Retail database with the <a  href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/DbScripts/RetailDbScript.sql">RetailDbScript.sql</a> file.
 
 ### Configuring Angular2StarterKitWeb
-- Change the 'WebApiUrl' value in the  <a  href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/Angular2StarterKitWeb/app/_helpers/izendaintegrate.js">izendaintegrate.js (Line 16)</a> file with the URL for the Izenda API.
+- Change the 'WebApiUrl' value in the  <a  href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/Angular2StarterKitWeb/app/_helpers/izendaintegrate.ts">izendaintegrate.js (Line 16)</a> file with the URL for the Izenda API.
 
 ```javascript
-"WebApiUrl": "http://localhost:9999/api",
+"WebApiUrl": "http://localhost:9999/api/",
 ``` 
 - Open the <a href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/Angular2StarterKitWeb/app/config.ts">config.ts (Line 4)</a> file and ensure 'apiEndPoint' is set. This will default to http://localhost:3358/ and can be left as is. 
 
@@ -51,7 +51,7 @@ let apiEndPoint = "http://localhost:3358/";
 npm install
 ``` 
 ```bash
-npm start
+npm run lite
 ``` 
 
 ### Run WebApi2StarterKit in Visual Studio
