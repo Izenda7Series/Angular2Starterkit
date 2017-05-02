@@ -6,7 +6,6 @@ The Angular2Starterkit illustrates the concepts of integrating Izenda into Angul
  :warning: **The Angular2Starterkit is designed for demonstration purposes and should not be used as an “as-is” fully-integrated solution. You can use the kit for reference or a baseline but ensure that security and customization meet the standards of your company.**
  
 ## Installation 
- Download the v1.24.0 (https://downloads.izenda.com/v1.24.0/) of the API and EmbeddedUI and copy the following:
  
 ### Deploying the Izenda API & Database
 
