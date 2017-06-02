@@ -61,6 +61,17 @@ namespace WebApi2StarterKit.Controllers
             return userInfo;
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("GetIzendaAccessToken")]
+        public IHttpActionResult GetIzendaAccessToken(string message)
+        {
+            var userInfo = IzendaBoundary.IzendaTokenAuthorization.DecryptIzendaAuthenticationMessage(message);
+            var token = IzendaBoundary.IzendaTokenAuthorization.GetToken(userInfo);
+            //return token;
+            return Ok(new { Token = token });
+        }
+
         // GET api/Account/UserInfo
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
         [Route("UserInfo")]

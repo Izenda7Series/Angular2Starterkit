@@ -15,7 +15,7 @@ import { AuthenticationService, UserService } from './_services/index';
 import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
-import { ExportReportComponent } from './export/index';
+import { ExportReportComponent, ExportReportViewerComponent } from './export/index';
 import { Navbar } from './navbar/index';
 import {Dashboard, DashboardDesigner, IzendaHome, IzendaSetting, ReportCustomFilter, ReportDesigner, ReportList, ReportPart, ReportViewer} from './izendacomponents/index'
 import {IzendaIntegrate} from './_helpers/izendaintegrate';
@@ -40,6 +40,7 @@ import {IzendaIntegrate} from './_helpers/izendaintegrate';
         HomeComponent,
         RegisterComponent,
         ExportReportComponent,
+        ExportReportViewerComponent,
         Dashboard, 
         DashboardDesigner, 
         IzendaHome, 
