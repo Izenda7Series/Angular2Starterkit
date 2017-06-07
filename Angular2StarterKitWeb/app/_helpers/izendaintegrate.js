@@ -16,7 +16,7 @@ var IzendaIntegrate = (function () {
             "WebApiUrl": "http://localhost:9999/api",
             //"WebApiUrl": "http://izenda-vm04.kms.com.vn:8200/api/",  
             "BaseUrl": "/",
-            "RootPath": "/izenda",
+            "RootPath": "/app/izenda",
             "CssFile": "izenda-ui.css",
             "Routes": {
                 "Settings": "settings",
