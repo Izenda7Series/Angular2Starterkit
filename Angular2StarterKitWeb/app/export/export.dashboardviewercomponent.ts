@@ -9,7 +9,7 @@ let IzendaSynergy = require("../izenda/izenda_ui");
     templateUrl: 'export.dashboardviewer.html'
 })
 
-export class ExportReportViewerComponent implements AfterViewInit {
+export class ExportDashboardViewerComponent implements AfterViewInit {
     currentUserContext: any = {};
    repportId: string;
     constructor( private router: Router, private activatedRoute: ActivatedRoute) { 
