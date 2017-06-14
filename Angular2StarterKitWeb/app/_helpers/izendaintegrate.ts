@@ -113,6 +113,12 @@ export class IzendaIntegrate {
         IzendaSynergy.renderNewDashboardPage(document.getElementById('izenda-root'));
     }
 
+    RenderDashboardViewer()
+    {
+        this.setContext();
+        IzendaSynergy.izendaInitDashboardViewer(document.getElementById('izenda-root'), 'your dashboard viewer');
+    }
+
     DestroyDom(dom: any)
     {
          this.setContext();

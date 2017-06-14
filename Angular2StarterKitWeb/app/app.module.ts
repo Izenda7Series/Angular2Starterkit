@@ -8,14 +8,14 @@ import { MockBackend, MockConnection } from "@angular/http/testing";
 import { BaseRequestOptions } from "@angular/http";
 
 import { AppComponent } from "./app.component";
-import { routing } from "./app.routing";
+import { Routing } from "./app.routing";
 
 import { AuthGuard } from "./_guards/index";
 import { AuthenticationService, UserService } from "./_services/index";
 import { LoginComponent } from "./login/index";
 import { RegisterComponent } from "./register/index";
 import { HomeComponent } from "./home/index";
-import { ExportReportComponent } from "./export/index";
+import { ExportReportComponent, ExportReportViewerComponent, ExportDashboardViewerComponent } from "./export/index";
 import { Navbar } from "./navbar/index";
 import {
   Dashboard,
@@ -26,7 +26,8 @@ import {
   ReportDesigner,
   ReportList,
   ReportPart,
-  ReportViewer
+  ReportViewer,
+  DashboardViewer
 } from "./izendacomponents/index";
 import { IzendaIntegrate } from "./_helpers/izendaintegrate";
 import { UrlSerializer } from "@angular/router";
@@ -36,13 +37,15 @@ import { CustomUrlSerializer } from "./_helpers/customurlserializer";
 //let IzendaBI =  './izenda/izenda_ui';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, routing],
+  imports: [BrowserModule, FormsModule, HttpModule, Routing],
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     RegisterComponent,
     ExportReportComponent,
+    ExportReportViewerComponent,
+    ExportDashboardViewerComponent,
     Dashboard,
     DashboardDesigner,
     IzendaHome,
@@ -52,6 +55,7 @@ import { CustomUrlSerializer } from "./_helpers/customurlserializer";
     ReportList,
     ReportPart,
     ReportViewer,
+    DashboardViewer,
     Navbar
   ],
   providers: [

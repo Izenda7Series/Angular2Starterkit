@@ -4,7 +4,7 @@ import { LoginComponent } from './login/index';
 import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
 import { AuthGuard } from './_guards/index';
-import { ExportReportComponent, ExportReportViewerComponent } from './export/index';
+import { ExportReportComponent, ExportReportViewerComponent, ExportDashboardViewerComponent } from './export/index';
 import {Dashboard, DashboardDesigner, IzendaHome, IzendaSetting, ReportCustomFilter, ReportDesigner, ReportList, ReportPart, ReportViewer} from './izendacomponents/index'
 
 const appRoutes: Routes = [
@@ -23,9 +23,10 @@ const appRoutes: Routes = [
 
     // export route
      { path: 'viewer/reportpart/:id', component: ExportReportComponent},   
-     { path: 'report/view/:id', component: ExportReportViewerComponent}, 
+     { path: 'report/view/:id', component: ExportReportViewerComponent},   
+     { path: 'dashboard/view/:id', component: ExportDashboardViewerComponent}, 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
 
-export const routing = RouterModule.forRoot(appRoutes);
+export const Routing = RouterModule.forRoot(appRoutes);
