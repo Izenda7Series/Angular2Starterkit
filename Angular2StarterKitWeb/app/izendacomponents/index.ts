@@ -7,3 +7,4 @@ export * from './reportdesigner.component';
 export * from './reportlist.component';
 export * from './reportpart.component';
 export * from './reportviewer.component';
+export * from './dashboardviewer.component';

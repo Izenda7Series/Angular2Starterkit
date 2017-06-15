@@ -66,7 +66,7 @@ export class IzendaIntegrate {
     RenderReportViewer()
     {
         this.setContext();
-        IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '75d975db-c19e-4b81-a5b2-8c63663856c9');
+        IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '[your report id]');
     }
 
     RenderReportCustomizedFilterViewer()
@@ -81,7 +81,7 @@ export class IzendaIntegrate {
                                 }
                             };
       
-        IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '75d975db-c19e-4b81-a5b2-8c63663856c9', filtersObj);
+        IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '[your report id]', filtersObj);
     }
 
     RenderReportParts()
@@ -89,15 +89,15 @@ export class IzendaIntegrate {
         //debugger;
         this.setContext();
         IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part1'), {
-                "id": "8F3B24F7-B55A-4095-81DE-68104175032A",
+                "id": "[your 1st report part id]",
             });
 
         IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part2'), {
-                    "id": "FFE428F2-1F4B-4BEB-9678-8FB7147A36FE",
+                    "id": "[your 2nd report part id]",
                 });
 
         IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part3'), {
-                    "id": "C0D6695F-10F2-4CD3-851C-A47BAA2A2E4A",
+                    "id": "[your 3rd report part id]",
                 });
 
     }
@@ -111,6 +111,12 @@ export class IzendaIntegrate {
     {
         this.setContext();
         IzendaSynergy.renderNewDashboardPage(document.getElementById('izenda-root'));
+    }
+
+    RenderDashboardViewer()
+    {
+        this.setContext();
+        IzendaSynergy.renderDashboardViewerPage(document.getElementById('izenda-root'), '[your dashboard id]');
     }
 
     DestroyDom(dom: any)
