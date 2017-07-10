@@ -372,6 +372,7 @@ namespace WebApi2StarterKit.Controllers
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
+
             if (!result.Succeeded)
             {
                 return GetErrorResult(result);
@@ -388,7 +389,12 @@ namespace WebApi2StarterKit.Controllers
                     if (tenant != null)
                         await IzendaBoundary.IzendaUtilities.CreateTenant(tenant.Name, izendaAdminAuthToken);
 
-                    await IzendaBoundary.IzendaUtilities.CreateUser(user, "Employee", izendaAdminAuthToken);
+                    //deprecated in favor of CreateIzendaUser
+                    //await IzendaBoundary.IzendaUtilities.CreateUser(user, "Employee", izendaAdminAuthToken);
+
+                    string assignedRole = "Employee";
+                    await IzendaBoundary.IzendaUtilities.CreateIzendaUser(user, assignedRole, izendaAdminAuthToken);
+                    
 
                     /// end izenda
                 }
