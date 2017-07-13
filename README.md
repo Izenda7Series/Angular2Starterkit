@@ -63,3 +63,26 @@ npm run lite
 - Now navigate to Settings > Data Setup > Connection String and replace the current connection string with the one you created for the Retail Database.
 
 - Click Reconnect and then save
+
+
+## Post Installation
+
+ :warning: In order to ensure smooth operation of this kit, the items below should be reviewed.
+ 
+ 
+### Exporting
+
+Update the WebUrl value in the IzendaSystemSetting table with the URL for your front-end. You can use the script below to accomplish this. As general best practice, we recommend backing up your database before making any manual updates.
+
+```sql
+
+UPDATE [IzendaSystemSetting]
+SET [Value] = '<your url here including the trailing slash>'
+WHERE [Name] = 'WebUrl'
+
+``` 
+
+If you do not update this setting, charts and other visualizations may not render correctly when emailed or exported. This will also be evident in the log files as shown below:
+
+`[ERROR][ExportingLogic ] Convert to image:
+System.Exception: HTML load error. The remote content was not found at the server - HTTP error 404`
