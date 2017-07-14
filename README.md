@@ -86,3 +86,35 @@ If you do not update this setting, charts and other visualizations may not rende
 
 `[ERROR][ExportingLogic ] Convert to image:
 System.Exception: HTML load error. The remote content was not found at the server - HTTP error 404`
+
+</br>
+
+### Authentication Routes
+
+Ensure that the AuthValidateAccessTokenUrl and AuthGetAccessTokenUrl values in the IzendaSystemSetting table use the fully qualified path to those API endpoints. 
+
+Examples:
+
+| Name                       | Value                                         | 
+| -------------------------- |:----------------------------------------------|
+| AuthValidateAccessTokenUrl |http://localhost:14809/api/validateAccessToken |
+| AuthGetAccessTokenUrl      |http://localhost:14809/api/getAccessToken      |
+
+</br>
+
+You can use the script below to accomplish this. As general best practice, we recommend backing up your database before making any manual updates.
+
+```sql
+
+UPDATE [IzendaSystemSetting]
+SET [Value] = '<your url here>'
+WHERE [Name] = 'AuthValidateAccessTokenUrl'
+
+UPDATE [IzendaSystemSetting]
+SET [Value] = '<your url here>'
+WHERE [Name] = 'AuthGetAccessTokenUrl'
+
+``` 
+
+:no_entry: If these values are not set, the authentication will not work properly.
+
