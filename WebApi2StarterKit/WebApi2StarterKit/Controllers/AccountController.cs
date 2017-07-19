@@ -60,7 +60,8 @@ namespace WebApi2StarterKit.Controllers
             var userInfo = IzendaBoundary.IzendaTokenAuthorization.GetUserInfo(access_token);
             return userInfo;
         }
-
+        
+        //This is used for exporting only
         [HttpGet]
         [AllowAnonymous]
         [Route("GetIzendaAccessToken")]
