@@ -4,14 +4,21 @@
 The Angular2Starterkit illustrates the concepts of integrating Izenda into Angular2 applications.
 
  :warning: **The Angular2Starterkit is designed for demonstration purposes and should not be used as an “as-is” fully-integrated solution. You can use the kit for reference or a baseline but ensure that security and customization meet the standards of your company.**
- 
+
+ :note: **The Izenda configuration database script provided is currently configured for Version 2.2.2 of Izenda.**
+
 ## Installation 
  
 ### Deploying the Izenda API & Database
 
-- Deploy the <a href="https://downloads.izenda.com/v1.24.0/API.zip">Izenda API</a> to IIS.
-- Create a database named 'IzendaAngular2' (This is the database for the Izenda configuration. It contains report definitions, dashboards,etc.). You may use any name of your choosing, just be sure to modify the script below to use the new database name.
-- Download and execute the <a href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/DbScripts/Izenda.sql">Izenda.sql</a> script.  
+
+- Create a database named 'IzendaAngular2' (This is the database for the Izenda configuration. It contains report definitions, dashboards,etc.). You may use any name of your choosing, just be sure to modify the script below to use the new database name. 
+- Download and execute the <a href="https://github.com/Izenda7Series/Angular2Starterkit/blob/master/DbScripts/Izenda.sql">Izenda.sql</a> script. Please note, the database version can be found in the IzendaDBVersion table of this database. This will be necessary when obtaining the proper resources in the following steps.  
+
+- Download and deploy the Izenda API to IIS. The API can be found on our <a href="https://downloads.izenda.com/">Downloads Page</a> in our version directories. Select the version directory that corresponds Izenda configuration database version and click the "API" resource in the directory. 
+
+- Deploy the Izenda API to IIS. The instructions for installing the Izenda API will follow the same instructions for <a href= "https://www.izenda.com/docs/install/doc_installation_guide.html#izenda-installation-as-two-separate-sites"> installing a standalone version of the Izenda's API.</a>
+
 - Download a copy of the <a href="https://github.com/Izenda7Series/Mvc5StarterKit/blob/master/Mvc5StarterKit/izendadb.config">izendadb.config</a> file and copy it to the root of your API deployment. Then modify the file with a valid connection string to this new database.
 
 ### Deploying the WebAPI & Database
@@ -43,7 +50,8 @@ Create the Retail database with the <a  href="https://github.com/Izenda7Series/A
 ```javascript
 let apiEndPoint = "http://localhost:3358/";
 ``` 
-- Download the <a href="https://downloads.izenda.com/v1.24.0/EmbeddedUI.zip">Izenda Embedded UI</a> and extract the files to the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/app/izenda">Angular2StarterKitWeb/app/izenda</a> folder.
+- Download a copy of the EmbeddedUI. The EmbeddedUI can be found on our <a href="https://downloads.izenda.com/">Downloads Page</a> in our version directories. Select the version directory that corresponds Izenda configuration database version and click the "EmbeddedUI" resource in the directory. 
+- Extract the files of the EmbeddedUI and place them in the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/app/izenda">Angular2StarterKitWeb/app/izenda</a> folder of your Angular 2 Kit.
 
 - Open a command-line window at root folder Angular2StarterKitWeb and run the following commands:
 ```bash
