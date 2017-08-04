@@ -25,7 +25,7 @@ const appRoutes: Routes = [
     // export route
      { path: 'viewer/reportpart/:id', component: ExportReportComponent},   
      { path: 'report/view/:id', component: ExportReportViewerComponent},   
-     { path: 'dashboard/view/:id', component: ExportDashboardViewerComponent}, 
+     { path: 'dashboard/edit/:id', component: ExportDashboardViewerComponent}, 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
