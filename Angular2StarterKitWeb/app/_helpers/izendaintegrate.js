@@ -5,7 +5,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 //declare var IzendaSynergy: any; //= require("./izenda/izenda_ui");
 var IzendaSynergy = require("../izenda/izenda_ui");
 var core_1 = require("@angular/core");
@@ -14,7 +13,7 @@ var IzendaIntegrate = (function () {
     }
     IzendaIntegrate.prototype.DoIzendaConfig = function () {
         IzendaSynergy.config({
-            "WebApiUrl": "http://localhost:8888/api",
+            "WebApiUrl": "http://localhost:9999/api",
             //"WebApiUrl": "http://izenda-vm04.kms.com.vn:8200/api/",  
             "BaseUrl": "/",
             "RootPath": "/app/izenda",
@@ -28,8 +27,7 @@ var IzendaIntegrate = (function () {
                 "ReportViewerPopup": "reportviewerpopup",
                 "Viewer": "viewer"
             },
-            "Timeout": 3600,
-            "NeedToEncodeUrl": false
+            "Timeout": 3600
         });
     };
     IzendaIntegrate.prototype.setContext = function () {
@@ -48,10 +46,8 @@ var IzendaIntegrate = (function () {
         IzendaSynergy.renderSettingPage(document.getElementById('izenda-root'));
     };
     IzendaIntegrate.prototype.RenderReportList = function () {
-        var dom = document.getElementById('izenda-root');
         this.setContext();
-        IzendaSynergy.renderReportPage(dom);
-        return dom;
+        IzendaSynergy.renderReportPage(document.getElementById('izenda-root'));
     };
     IzendaIntegrate.prototype.RenderReportDesigner = function () {
         this.setContext();

@@ -5,7 +5,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
@@ -21,8 +20,6 @@ var index_6 = require("./export/index");
 var index_7 = require("./navbar/index");
 var index_8 = require("./izendacomponents/index");
 var izendaintegrate_1 = require("./_helpers/izendaintegrate");
-var router_1 = require("@angular/router");
-var customurlserializer_1 = require("./_helpers/customurlserializer");
 //import './izenda/izenda-ui.css';
 //let IzendaBI =  './izenda/izenda_ui';
 var AppModule = (function () {
@@ -32,7 +29,12 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, app_routing_1.routing],
+        imports: [
+            platform_browser_1.BrowserModule,
+            forms_1.FormsModule,
+            http_1.HttpModule,
+            app_routing_1.routing
+        ],
         declarations: [
             app_component_1.AppComponent,
             index_3.LoginComponent,
@@ -54,8 +56,7 @@ AppModule = __decorate([
             index_1.AuthGuard,
             index_2.AuthenticationService,
             index_2.UserService,
-            izendaintegrate_1.IzendaIntegrate,
-            { provide: router_1.UrlSerializer, useClass: customurlserializer_1.CustomUrlSerializer }
+            izendaintegrate_1.IzendaIntegrate
         ],
         bootstrap: [app_component_1.AppComponent]
     })
