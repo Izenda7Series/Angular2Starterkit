@@ -91,6 +91,43 @@ namespace WebApi2StarterKit.IzendaBoundary
             }
         }
 
+        public async Task DeleteAsync(string action, string authToken = null)
+        {
+            using (var httpClient = GetHttpClient(authToken))
+            {
+                var url = BuildActionUri(action);
+                var httpResponse = await httpClient.DeleteAsync(url);
+                try
+                {
+                    httpResponse.EnsureSuccessStatusCode();
+                }
+                catch (Exception ex)
+                {
+                    throw new WebApiException(url, httpResponse.StatusCode, ex);
+                }
+            }
+        }
+
+        public async Task<TResult> DeleteReturnValueAsync<TResult>(string action, string authToken = null)
+        {
+            using (var httpClient = GetHttpClient(authToken))
+            {
+                var url = BuildActionUri(action);
+                var httpResponse = await httpClient.DeleteAsync(url);
+                try
+                {
+                    httpResponse.EnsureSuccessStatusCode();
+                }
+                catch (Exception ex)
+                {
+                    throw new WebApiException(url, httpResponse.StatusCode, ex);
+                }
+
+                var responseJson = await httpResponse.Content.ReadAsStringAsync();
+                return responseJson != "null" ? JsonConvert.DeserializeObject<TResult>(responseJson) : default(TResult);
+            }
+        }
+
         private HttpClient GetHttpClient(string authToken = null)
         {
             var client = new HttpClient();
