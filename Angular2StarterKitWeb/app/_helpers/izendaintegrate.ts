@@ -7,7 +7,7 @@ export class IzendaIntegrate {
     DoIzendaConfig():void
     {
        IzendaSynergy.config({
-            "WebApiUrl": "http://localhost:9999/api",
+            "WebApiUrl": "http://localhost:9999/api/",
             //"WebApiUrl": "http://izenda-vm04.kms.com.vn:8200/api/",  
             "BaseUrl": "/",
             "RootPath": "/app/izenda",
