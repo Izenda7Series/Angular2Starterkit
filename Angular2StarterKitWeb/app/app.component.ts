@@ -1,6 +1,8 @@
 ﻿import { Component } from '@angular/core';
 import {IzendaIntegrate} from './_helpers/izendaintegrate';
 import { Router } from '@angular/router';
+import "./app.css";
+import "./izenda/izenda-ui.css";
 
 @Component({
     moduleId: module.id,

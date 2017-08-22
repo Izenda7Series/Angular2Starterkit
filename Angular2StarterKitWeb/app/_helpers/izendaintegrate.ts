@@ -1,4 +1,7 @@
-//declare var IzendaSynergy: any; //= require("./izenda/izenda_ui");
+import "../izenda/izenda_common";
+import "../izenda/izenda_locales";
+import "../izenda/izenda_vendors";
+
 let IzendaSynergy = require("../izenda/izenda_ui");
 import { Injectable } from '@angular/core';
 
@@ -8,7 +11,6 @@ export class IzendaIntegrate {
     {
        IzendaSynergy.config({
             "WebApiUrl": "http://localhost:9999/api/",
-            //"WebApiUrl": "http://izenda-vm04.kms.com.vn:8200/api/",  
             "BaseUrl": "/",
             "RootPath": "/app/izenda",
             "CssFile": "izenda-ui.css",
