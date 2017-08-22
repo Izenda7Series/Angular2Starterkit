@@ -1,7 +1,7 @@
 
 export class Config {
     public static getPath(value: string): string {
-        let apiEndPoint = "http://localhost:3358/";
+        let apiEndPoint = "http://localhost:8102/";
         switch (value) {
             case "register":
                 return apiEndPoint + "api/Account/Register";

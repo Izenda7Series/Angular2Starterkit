@@ -1,11 +1,11 @@
 ﻿import { Component } from '@angular/core';
 import {IzendaIntegrate} from './_helpers/izendaintegrate';
 import { Router } from '@angular/router';
-import "./app.css";
-import "./izenda/izenda-ui.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../assets/css/app.css";
+import "../assets/izenda/izenda-ui.css";
 
 @Component({
-    moduleId: module.id,
     selector: 'app',
     templateUrl: 'app.component.html'
 })
