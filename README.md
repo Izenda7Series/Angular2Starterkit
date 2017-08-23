@@ -55,10 +55,17 @@ let apiEndPoint = "http://localhost:3358/";
 
 - Open a command-line window at root folder Angular2StarterKitWeb and run the following commands:
 ```bash
-npm install
+npm install or yarn install
 ``` 
 ```bash
-npm run lite
+npm start or yarn start
+``` 
+- Use the following commands to build deployment package:
+```bash
+npm install or yarn install
+``` 
+```bash
+npm run build or yarn run build
 ``` 
 
 ### Run WebApi2StarterKit in Visual Studio
@@ -103,10 +110,10 @@ Ensure that the AuthValidateAccessTokenUrl and AuthGetAccessTokenUrl values in t
 
 Examples:
 
-| Name                       | Value                                         | 
-| -------------------------- |:----------------------------------------------|
-| AuthValidateAccessTokenUrl |http://localhost:14809/api/validateAccessToken |
-| AuthGetAccessTokenUrl      |http://localhost:14809/api/getAccessToken      |
+| Name                       | Value                                                   | 
+| -------------------------- |:--------------------------------------------------------|
+| AuthValidateAccessTokenUrl |http://localhost:3358/api/account/validateIzendaAuthToken|
+| AuthGetAccessTokenUrl      |http://localhost:3358/api/account/GetIzendaAccessToken   |
 
 </br>
 
