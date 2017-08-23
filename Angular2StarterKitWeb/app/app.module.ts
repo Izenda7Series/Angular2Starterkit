@@ -33,9 +33,6 @@ import { IzendaIntegrate } from "./_helpers/izendaintegrate";
 import { UrlSerializer } from "@angular/router";
 import { CustomUrlSerializer } from "./_helpers/customurlserializer";
 
-//import './izenda/izenda-ui.css';
-//let IzendaBI =  './izenda/izenda_ui';
-
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, Routing],
   declarations: [

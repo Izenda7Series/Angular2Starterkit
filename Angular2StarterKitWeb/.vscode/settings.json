@@ -1,0 +1,44 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  // Controls the font size in pixels.
+  "editor.fontSize": 14,
+
+  // Controls auto save of dirty files. Accepted values:  'off', 'afterDelay', 'onFocusChange' (editor loses focus), 'onWindowChange' (window loses focus). If set to 'afterDelay', you can configure the delay in 'files.autoSaveDelay'.
+  "files.autoSave": "off",
+
+  // Controls the font family.
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 4,
+
+  // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+  "editor.renderWhitespace": "none",
+
+  // Configure glob patterns for excluding files and folders.
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/*.js.map": true,
+    "**/*.spec.js": true,
+    "**/*.js": {"when": "$(basename).ts"}
+  },
+
+  // Controls the cursor style, accepted values are 'block', 'block-outline', 'line', 'line-thin', 'underline' and 'underline-thin'
+  "editor.cursorStyle": "line",
+
+  // Insert spaces when pressing Tab. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.insertSpaces": true,
+
+  // Controls how lines should wrap. Can be:
+  //  - 'off' (disable wrapping),
+  //  - 'on' (viewport wrapping),
+  //  - 'wordWrapColumn' (wrap at `editor.wordWrapColumn`) or
+  //  - 'bounded' (wrap at minimum of viewport and `editor.wordWrapColumn`).
+  "editor.wordWrap": "off",
+
+  // Configure file associations to languages (e.g. '*.extension': 'html'). These have precedence over the default associations of the languages installed.
+  "files.associations": {}
+}
