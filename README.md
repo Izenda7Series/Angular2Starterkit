@@ -51,7 +51,7 @@ Create the Retail database with the <a  href="https://github.com/Izenda7Series/A
 let apiEndPoint = "http://localhost:3358/";
 ``` 
 - Download a copy of the EmbeddedUI. The EmbeddedUI can be found on our <a href="https://downloads.izenda.com/">Downloads Page</a> in our version directories. Select the version directory that corresponds Izenda configuration database version and click the "EmbeddedUI" resource in the directory. 
-- Extract the files of the EmbeddedUI and place them in the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/app/izenda">Angular2StarterKitWeb/app/izenda</a> folder of your Angular 2 Kit.
+- Extract the files of the EmbeddedUI and place them in the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/assets/izenda">Angular2StarterKitWeb/assets/izenda</a> folder of your Angular 2 Kit.
 
 - Open a command-line window at root folder Angular2StarterKitWeb and run the following commands:
 ```bash
