@@ -133,3 +133,8 @@ WHERE [Name] = 'AuthGetAccessTokenUrl'
 
 :no_entry: If these values are not set, the authentication will not work properly.
 
+## Further details about Izenda integration
+
+- <a href="https://www.izenda.com/docs/install/.install.html">Installation and Maintenance Guide<a/>
+- <a href="https://www.izenda.com/docs/dev/.developer_guide.html">Developer Guide</a>
+- <a href="https://www.izenda.com/docs/dev/.developer_guide_integrated_scenarios.html">Developer Guide for Integrated Scenarios</a>
