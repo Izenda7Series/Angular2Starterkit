@@ -106,19 +106,25 @@ export class IzendaIntegrate {
     RenderDashboard()
     {
         this.setContext();
-        IzendaSynergy.renderDashboardPage(document.getElementById('izenda-root'));
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.renderDashboardPage(dom);
+        return dom;
     }
 
     RenderDashboardDesigner()
     {
         this.setContext();
-        IzendaSynergy.renderNewDashboardPage(document.getElementById('izenda-root'));
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.renderNewDashboardPage(dom);
+        return dom;
     }
 
     RenderDashboardViewer()
     {
         this.setContext();
-        IzendaSynergy.renderDashboardViewerPage(document.getElementById('izenda-root'), '[your dashboard id]');
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.renderDashboardViewerPage(dom, '[your dashboard id]');
+        return dom;
     }
 
     DestroyDom(dom: any)
