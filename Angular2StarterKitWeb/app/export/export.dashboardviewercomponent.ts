@@ -2,10 +2,9 @@ import { Component, AfterViewInit } from '@angular/core';
 
 import { User } from '../_models/index';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-let IzendaSynergy = require("../izenda/izenda_ui");
+let IzendaSynergy = require("../../assets//izenda/izenda_ui");
 
 @Component({
-    moduleId: module.id,
     templateUrl: 'export.dashboardviewer.html'
 })
 

@@ -1,9 +1,8 @@
 import { Component, AfterViewInit } from '@angular/core';
-let IzendaSynergy = require("../izenda/izenda_ui");
+let IzendaSynergy = require("../../assets//izenda/izenda_ui");
 
 @Component({
-    moduleId: module.id,
-     templateUrl: 'rootcontainer.html'
+    templateUrl: 'rootcontainer.html'
 })
 
 export class Dashboard implements AfterViewInit {

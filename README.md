@@ -51,14 +51,21 @@ Create the Retail database with the <a  href="https://github.com/Izenda7Series/A
 let apiEndPoint = "http://localhost:3358/";
 ``` 
 - Download a copy of the EmbeddedUI. The EmbeddedUI can be found on our <a href="https://downloads.izenda.com/">Downloads Page</a> in our version directories. Select the version directory that corresponds Izenda configuration database version and click the "EmbeddedUI" resource in the directory. 
-- Extract the files of the EmbeddedUI and place them in the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/app/izenda">Angular2StarterKitWeb/app/izenda</a> folder of your Angular 2 Kit.
+- Extract the files of the EmbeddedUI and place them in the <a href="https://github.com/Izenda7Series/Angular2Starterkit/tree/master/Angular2StarterKitWeb/assets/izenda">Angular2StarterKitWeb/assets/izenda</a> folder of your Angular 2 Kit.
 
 - Open a command-line window at root folder Angular2StarterKitWeb and run the following commands:
 ```bash
-npm install
+npm install or yarn install
 ``` 
 ```bash
-npm run lite
+npm start or yarn start
+``` 
+- Use the following commands to build deployment package:
+```bash
+npm install or yarn install
+``` 
+```bash
+npm run build or yarn run build
 ``` 
 
 ### Run WebApi2StarterKit in Visual Studio
@@ -103,10 +110,10 @@ Ensure that the AuthValidateAccessTokenUrl and AuthGetAccessTokenUrl values in t
 
 Examples:
 
-| Name                       | Value                                         | 
-| -------------------------- |:----------------------------------------------|
-| AuthValidateAccessTokenUrl |http://localhost:14809/api/validateAccessToken |
-| AuthGetAccessTokenUrl      |http://localhost:14809/api/getAccessToken      |
+| Name                       | Value                                                   | 
+| -------------------------- |:--------------------------------------------------------|
+| AuthValidateAccessTokenUrl |http://localhost:3358/api/account/validateIzendaAuthToken|
+| AuthGetAccessTokenUrl      |http://localhost:3358/api/account/GetIzendaAccessToken   |
 
 </br>
 
@@ -126,3 +133,8 @@ WHERE [Name] = 'AuthGetAccessTokenUrl'
 
 :no_entry: If these values are not set, the authentication will not work properly.
 
+## Further details about Izenda integration
+
+- <a href="https://www.izenda.com/docs/install/.install.html">Installation and Maintenance Guide<a/>
+- <a href="https://www.izenda.com/docs/dev/.developer_guide.html">Developer Guide</a>
+- <a href="https://www.izenda.com/docs/dev/.developer_guide_integrated_scenarios.html">Developer Guide for Integrated Scenarios</a>

@@ -1,9 +1,9 @@
 ﻿import { Component } from '@angular/core';
 import {IzendaIntegrate} from './_helpers/izendaintegrate';
 import { Router } from '@angular/router';
+import "../assets/css/app.css";
 
 @Component({
-    moduleId: module.id,
     selector: 'app',
     templateUrl: 'app.component.html'
 })

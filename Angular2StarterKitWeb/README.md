@@ -1,5 +1,9 @@
-# angular2-jwt-authentication-example
+# Izenda Angular 2 Starter Kit
 
-Angular 2 JWT Authentication Example
+The Starter Kit demostrates how to integrate Izenda BI Platform UI into an Angular 2 application
 
-To see a demo and further details go to http://jasonwatmore.com/post/2016/08/16/angular-2-jwt-authentication-example-tutorial
+To see further details about Izenda integration go to:
+
+- <a href="https://www.izenda.com/docs/install/.install.html">Installation and Maintenance Guide<a/>
+- <a href="https://www.izenda.com/docs/dev/.developer_guide.html">Developer Guide</a>
+- <a href="https://www.izenda.com/docs/dev/.developer_guide_integrated_scenarios.html">Developer Guide for Integrated Scenarios</a>
