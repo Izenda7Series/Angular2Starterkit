@@ -1,15 +1,17 @@
-import { Component, AfterViewInit } from '@angular/core';
-let IzendaSynergy = require("../../assets//izenda/izenda_ui");
+import { Component, AfterViewInit, OnDestroy } from "@angular/core";
+import { IzendaIntegrate } from "../_helpers/izendaintegrate";
 
 @Component({
-    templateUrl: 'rootcontainer.html'
+  moduleId: module.id,
+  templateUrl: "rootcontainer.html"
 })
-
-export class DashboardDesigner implements AfterViewInit {
-    currentUserContext: any = {};
-    ngAfterViewInit() {
-        this.currentUserContext = { token: localStorage.getItem("izendatoken")};   
-        IzendaSynergy.setCurrentUserContext(this.currentUserContext);
-        IzendaSynergy.renderNewDashboardPage(document.getElementById('izenda-root'));
-    }
+export class DashboardDesigner implements AfterViewInit, OnDestroy {
+  dom: any = {};
+  constructor(private izItergrate: IzendaIntegrate) {}
+  ngAfterViewInit() {
+    this.dom = this.izItergrate.RenderDashboardDesigner();
+  }
+  ngOnDestroy() {
+    this.izItergrate.DestroyDom(this.dom);
+  }
 }
