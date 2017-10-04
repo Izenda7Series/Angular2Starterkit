@@ -3,7 +3,12 @@
 ## Overview
 The Angular2Starterkit illustrates the concepts of integrating Izenda into Angular2 applications.
 
+### Q. What is in this repository?
+
+### A. This is a simple example using a project template with Izenda Embedded into it. This repository is only an example of integrating Izenda into another application. The project template used in this scenario is used as a substitute for your application. This repository shows examples of how you might embed Izenda into your application.
+
  :warning: **The Angular2Starterkit is designed for demonstration purposes and should not be used as an “as-is” fully-integrated solution. You can use the kit for reference or a baseline but ensure that security and customization meet the standards of your company.**
+
 
  :note: **The Izenda configuration database script provided is currently configured for Version 2.2.2 of Izenda.**
 
