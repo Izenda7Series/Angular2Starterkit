@@ -10,7 +10,7 @@ export class IzendaIntegrate {
     DoIzendaConfig():void
     {
        IzendaSynergy.config({
-            "WebApiUrl": "http://localhost:9999/api/",
+            "WebApiUrl": "http://localhost:8101/api/",
             "BaseUrl": "/",
             "RootPath": "/app/izenda",
             "CssFile": "izenda-ui.css",
@@ -103,6 +103,24 @@ export class IzendaIntegrate {
                 });
 
     }
+
+    UpdateResultReportPart(reportPartId: string, overridingFilterValue: any, containerId: string)
+    {
+        this.setContext();
+        IzendaSynergy.renderReportPart(document.getElementById(containerId), {
+            "id": reportPartId,
+            "overridingFilterValue": overridingFilterValue,
+        });
+    }
+
+    RenderSingleReportPart(reportPartId: string, containerId: string)
+    {
+        this.setContext();
+        IzendaSynergy.renderReportPart(document.getElementById(containerId), {
+            "id": reportPartId
+        });
+    }
+
     RenderDashboard()
     {
         this.setContext();

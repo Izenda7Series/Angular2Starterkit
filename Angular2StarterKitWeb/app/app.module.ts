@@ -26,6 +26,7 @@ import {
   ReportDesigner,
   ReportList,
   ReportPart,
+  AdvancedReportPart,
   ReportViewer,
   DashboardViewer
 } from "./izendacomponents/index";
@@ -51,6 +52,7 @@ import { CustomUrlSerializer } from "./_helpers/customurlserializer";
     ReportDesigner,
     ReportList,
     ReportPart,
+    AdvancedReportPart,
     ReportViewer,
     DashboardViewer,
     Navbar
