@@ -1,12 +1,17 @@
+import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import "../../assets/izenda/izenda_common";
 import "../../assets/izenda/izenda_locales";
 import "../../assets/izenda/izenda_vendors";
 
 let IzendaSynergy = require("../../assets/izenda/izenda_ui");
-import { Injectable } from '@angular/core';
 
 @Injectable()
 export class IzendaIntegrate {
+
+    constructor(private router: Router) {
+    }
+
     DoIzendaConfig():void
     {
        IzendaSynergy.config({
@@ -24,8 +29,14 @@ export class IzendaIntegrate {
                 "Viewer": "viewer"
             },
             "Timeout": 3600,
-            "NeedToEncodeUrl" : false
+            "NeedToEncodeUrl" : false,
+            "OnReceiveUnauthorizedResponse": this.redirectToLoginPage,
         });
+    }
+
+    redirectToLoginPage(){
+        console.log("Current user is unauthorized to access Izenda function. Navaigate to login page");
+        this.router.navigate(['/login']);
     }
 
    setContext():void {  
