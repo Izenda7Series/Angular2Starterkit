@@ -49,10 +49,10 @@ module.exports = {
   plugins: [
     // Workaround for angular/angular#11580
     new webpack.ContextReplacementPlugin(
-      // The (\\|\/) piece accounts for path separators in *nix and Windows
-      /angular(\\|\/)core(\\|\/)@angular/,
-      helpers.root('./'), // location of your src
-      {} // a map of your routes
+      // The (\\|\/) piece accounts for path separators for Windows and MacOS
+      /(.+)?angular(\\|\/)core(.+)?/,
+      helpers.root(''), // location of your src
+      {} // a map of your routes 
     ),
  
     new webpack.optimize.CommonsChunkPlugin({
