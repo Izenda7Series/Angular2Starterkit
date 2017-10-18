@@ -5,7 +5,7 @@ import { RegisterComponent } from './register/index';
 import { HomeComponent } from './home/index';
 import { AuthGuard } from './_guards/index';
 import { ExportReportComponent, ExportReportViewerComponent, ExportDashboardViewerComponent } from './export/index';
-import {Dashboard, DashboardDesigner, IzendaHome, IzendaSetting, ReportCustomFilter, ReportDesigner, ReportList, ReportPart, ReportViewer, DashboardViewer} from './izendacomponents/index'
+import {Dashboard, DashboardDesigner, IzendaHome, IzendaSetting, ReportCustomFilter, ReportDesigner, ReportList, ReportPart, AdvancedReportPart, ReportViewer, DashboardViewer} from './izendacomponents/index'
 
 const appRoutes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -17,6 +17,7 @@ const appRoutes: Routes = [
     { path: 'izenda/reportviewer', component: ReportViewer, canActivate: [AuthGuard]},    
     { path: 'izenda/reportcustomfilter', component: ReportCustomFilter, canActivate: [AuthGuard]},    
     { path: 'izenda/reportpart', component: ReportPart, canActivate: [AuthGuard]},    
+    { path: 'izenda/advancedreportpart', component: AdvancedReportPart},    
     { path: 'izenda/dashboarddesigner', component: DashboardDesigner, canActivate: [AuthGuard]},    
     { path: 'izenda/dashboard', component: Dashboard, canActivate: [AuthGuard]},
     { path: 'izenda/dashboardviewer', component: DashboardViewer, canActivate: [AuthGuard]},

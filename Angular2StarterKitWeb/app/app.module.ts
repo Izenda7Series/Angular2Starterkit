@@ -26,6 +26,7 @@ import {
   ReportDesigner,
   ReportList,
   ReportPart,
+  AdvancedReportPart,
   ReportViewer,
   DashboardViewer
 } from "./izendacomponents/index";
@@ -49,6 +50,7 @@ import { IzendaIntegrate } from "./_helpers/izendaintegrate";
     ReportDesigner,
     ReportList,
     ReportPart,
+    AdvancedReportPart,
     ReportViewer,
     DashboardViewer,
     Navbar
