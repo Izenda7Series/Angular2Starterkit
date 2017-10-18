@@ -8,11 +8,11 @@ import { Router } from "@angular/router";
 @Injectable()
 export class AuthenticationService {
     public token: string;
+    public currentUserSubject = new BehaviorSubject<string>(localStorage.getItem('currentUser'));
     public isAuthenticatedSubject = new BehaviorSubject<boolean>(this.hasToken());
     
     constructor(private http: Http, private router:Router) {
         // set token if saved in local storage
-        var currentUser = localStorage.getItem('currentUser');
         this.token =  localStorage.getItem('tokenKey');
     }
 
@@ -42,6 +42,7 @@ export class AuthenticationService {
 
                     //Notify is authenticated
                     this.isAuthenticatedSubject.next(true);
+                    this.currentUserSubject.next(username);
                     return true;
                 } else {
                     return false;
@@ -67,7 +68,8 @@ export class AuthenticationService {
 
                     //Notify is not authenticated
                     this.isAuthenticatedSubject.next(false);
-            },
+                    this.currentUserSubject.next(null);
+                },
             err=> { 
                 console.log(err);
                 });
@@ -111,6 +113,10 @@ export class AuthenticationService {
 
     hasToken() : boolean {
         return !!localStorage.getItem('tokenKey');
+    }
+
+    currentUser(): Observable<string> {
+        return this.currentUserSubject.asObservable();
     }
 
     isAuthenticated() : Observable<boolean> {

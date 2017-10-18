@@ -9,11 +9,11 @@ import { AuthenticationService } from '../_services/index';
 })
 
 export class Navbar { 
-    currentUser:string;
+    currentUser: Observable<string>;
     isAuthenticated: Observable<boolean>;
 
     constructor(private router: Router, private authService: AuthenticationService) {
-         this.currentUser = localStorage.getItem("currentUser");
+         this.currentUser = authService.currentUser();
          this.isAuthenticated = authService.isAuthenticated();
     }
 
