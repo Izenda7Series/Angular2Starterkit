@@ -31,8 +31,6 @@ import {
   DashboardViewer
 } from "./izendacomponents/index";
 import { IzendaIntegrate } from "./_helpers/izendaintegrate";
-import { UrlSerializer } from "@angular/router";
-import { CustomUrlSerializer } from "./_helpers/customurlserializer";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpModule, Routing],
@@ -62,7 +60,6 @@ import { CustomUrlSerializer } from "./_helpers/customurlserializer";
     AuthenticationService,
     UserService,
     IzendaIntegrate,
-    { provide: UrlSerializer, useClass: CustomUrlSerializer }
   ],
   bootstrap: [AppComponent]
 })

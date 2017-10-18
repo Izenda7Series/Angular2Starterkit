@@ -1,6 +1,6 @@
 ﻿import { Injectable } from '@angular/core';
 import { Http, Headers, Response, RequestOptions, URLSearchParams } from '@angular/http';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import 'rxjs/add/operator/map'
 import {Config} from '../config'
 import { Router } from "@angular/router";
@@ -8,10 +8,11 @@ import { Router } from "@angular/router";
 @Injectable()
 export class AuthenticationService {
     public token: string;
-
+    public currentUserSubject = new BehaviorSubject<string>(localStorage.getItem('currentUser'));
+    public isAuthenticatedSubject = new BehaviorSubject<boolean>(this.hasToken());
+    
     constructor(private http: Http, private router:Router) {
         // set token if saved in local storage
-        var currentUser = localStorage.getItem('currentUser');
         this.token =  localStorage.getItem('tokenKey');
     }
 
@@ -38,6 +39,10 @@ export class AuthenticationService {
                     localStorage.setItem('currentUser', username);
                     localStorage.setItem('tokenKey', token);
                     this.getIzendaToken(token);
+
+                    //Notify is authenticated
+                    this.isAuthenticatedSubject.next(true);
+                    this.currentUserSubject.next(username);
                     return true;
                 } else {
                     return false;
@@ -60,7 +65,11 @@ export class AuthenticationService {
                     localStorage.removeItem('currentUser');
                     localStorage.removeItem('tokenKey');
                     localStorage.removeItem('izendatoken');
-            },
+
+                    //Notify is not authenticated
+                    this.isAuthenticatedSubject.next(false);
+                    this.currentUserSubject.next(null);
+                },
             err=> { 
                 console.log(err);
                 });
@@ -100,5 +109,17 @@ export class AuthenticationService {
                 console.log("Cannot get Izenda Token");
                 console.log(error);
             });
+    }
+
+    hasToken() : boolean {
+        return !!localStorage.getItem('tokenKey');
+    }
+
+    currentUser(): Observable<string> {
+        return this.currentUserSubject.asObservable();
+    }
+
+    isAuthenticated() : Observable<boolean> {
+        return this.isAuthenticatedSubject.asObservable();
     }
 }
