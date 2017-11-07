@@ -7,7 +7,7 @@
     },
     "scripts": {
         "start": "webpack-dev-server --inline --progress --open --port 3000",
-        "build": "rimraf dist && webpack --config config/webpack.prod.js --bail",
+        "build": "rimraf dist && webpack --progress --config config/webpack.prod.js --bail",
         "tsc": "tsc",
         "tsc:w": "tsc -w"
     },
