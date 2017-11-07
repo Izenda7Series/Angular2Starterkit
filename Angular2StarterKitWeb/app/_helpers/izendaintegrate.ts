@@ -17,7 +17,7 @@ export class IzendaIntegrate {
        IzendaSynergy.config({
             "WebApiUrl": "http://localhost:8101/api/",
             "BaseUrl": "/",
-            "RootPath": "/app/izenda",
+            "RootPath": "/assets/izenda",
             "CssFile": "izenda-ui.css",
             "Routes": {
                 "ReportDesigner": "reportdesigner",
