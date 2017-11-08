@@ -3,7 +3,7 @@ import {IzendaIntegrate} from '../_helpers/izendaintegrate';
 
 
 @Component({
-    templateUrl: 'rootreportpart.html'
+    templateUrl: 'reportpart.component.html'
 })
 
 export class ReportPart implements AfterViewInit {

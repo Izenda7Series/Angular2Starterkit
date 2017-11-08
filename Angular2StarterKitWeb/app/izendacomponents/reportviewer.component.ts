@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import {IzendaIntegrate} from '../_helpers/izendaintegrate';
 
 
@@ -6,11 +6,17 @@ import {IzendaIntegrate} from '../_helpers/izendaintegrate';
     templateUrl: 'rootcontainer.html'
 })
 
-export class ReportViewer implements AfterViewInit {
-    constructor(private izItergrate: IzendaIntegrate) {
-     }
+export class ReportViewer implements AfterViewInit, OnDestroy {
+    dom: any = {};
+
+    constructor(private izItergrate: IzendaIntegrate) {}
 
     ngAfterViewInit() {
-        this.izItergrate.RenderReportViewer();
+        this.dom = this.izItergrate.RenderReportViewer();
+        this.izItergrate.AutoHideIzenaProgressBar();
+    }
+    
+    ngOnDestroy() {
+        this.izItergrate.DestroyDom(this.dom);
     }
 }

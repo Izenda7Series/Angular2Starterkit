@@ -22,6 +22,7 @@ const appRoutes: Routes = [
     { path: 'izenda/dashboard', component: Dashboard, canActivate: [AuthGuard]},
     { path: 'izenda/dashboardviewer', component: DashboardViewer, canActivate: [AuthGuard]},
     { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
 
     // export route
      { path: 'viewer/reportpart/:id', component: ExportReportComponent},   
