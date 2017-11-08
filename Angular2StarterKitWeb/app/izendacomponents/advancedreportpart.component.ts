@@ -24,6 +24,7 @@ export class AdvancedReportPart implements AfterViewInit {
         }
         let reportPartId = "[your_report_part_id]";
         this.izItergrate.UpdateResultReportPart(reportPartId, overridingFilterValue, "update-result");
+        this.izItergrate.HideIzenaProgressBar('update-result', 'reportPartLoader');
     }
 
     displayPart(partNumber: number){
@@ -45,5 +46,6 @@ export class AdvancedReportPart implements AfterViewInit {
          } 
 
         this.izItergrate.RenderSingleReportPart(reportPartId, "update-alone");
+        this.izItergrate.HideIzenaProgressBar('update-alone', 'reportPartLoader');
     }
 }

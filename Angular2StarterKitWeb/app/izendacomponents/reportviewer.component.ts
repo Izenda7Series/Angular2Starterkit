@@ -13,6 +13,7 @@ export class ReportViewer implements AfterViewInit, OnDestroy {
 
     ngAfterViewInit() {
         this.dom = this.izItergrate.RenderReportViewer();
+        this.izItergrate.AutoHideIzenaProgressBar();
     }
     
     ngOnDestroy() {

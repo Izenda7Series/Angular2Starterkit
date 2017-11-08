@@ -13,6 +13,7 @@ export class ReportCustomFilter implements AfterViewInit, OnDestroy {
 
     ngAfterViewInit() {
         this.dom = this.izItergrate.RenderReportCustomizedFilterViewer();
+        this.izItergrate.AutoHideIzenaProgressBar();
     }
 
     ngOnDestroy() {

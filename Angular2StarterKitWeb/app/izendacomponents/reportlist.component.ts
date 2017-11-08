@@ -13,6 +13,7 @@ export class ReportList implements AfterViewInit, OnDestroy {
 
     ngAfterViewInit() {
         this.dom = this.izItergrate.RenderReportList();
+        this.izItergrate.AutoHideIzenaProgressBar();
     }
     
     ngOnDestroy() {

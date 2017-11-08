@@ -49,7 +49,7 @@ export class IzendaIntegrate {
         IzendaSynergy.setCurrentUserContext(currentUserContext);
     }
 
-     /* Izenda Function */
+    /* Izenda Function */
 
     RenderIzenda()
     {
@@ -171,6 +171,34 @@ export class IzendaIntegrate {
     {
         this.setContext();
         IzendaSynergy.unmountComponent(dom);
+    }
+
+    /* Izenda Helper Function */
+
+    AutoHideIzenaProgressBar(){
+        this.HideIzenaProgressBar("izenda-root", "progressLoader");
+    }
+
+    HideIzenaProgressBar(targetId: string, progressBarId: string)
+    {
+        // select the target node
+        var target = document.getElementById(targetId);
+    
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                let progressBar = document.getElementById(progressBarId);
+                if(progressBar){
+                    progressBar.style.display = 'none';
+                }
+            });
+        });
+    
+        // configuration of the observer:
+        var config = { attributes: true, childList: true, characterData: true };
+        if (target) {
+            // pass in the target node, as well as the observer options
+            observer.observe(target, config);
+        }
     }
 }
 

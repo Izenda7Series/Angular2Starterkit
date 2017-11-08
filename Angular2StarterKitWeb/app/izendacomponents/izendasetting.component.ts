@@ -12,6 +12,7 @@ export class IzendaSetting implements AfterViewInit, OnDestroy {
 
     ngAfterViewInit() {
         this.dom = this.izItergrate.RenderIzendaSettings();
+        this.izItergrate.AutoHideIzenaProgressBar();
     }
     
     ngOnDestroy() {

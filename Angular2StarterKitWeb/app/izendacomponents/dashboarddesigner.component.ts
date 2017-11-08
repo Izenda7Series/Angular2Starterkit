@@ -12,6 +12,7 @@ export class DashboardDesigner implements AfterViewInit, OnDestroy {
   
   ngAfterViewInit() {
     this.dom = this.izItergrate.RenderDashboardDesigner();
+    this.izItergrate.AutoHideIzenaProgressBar();
   }
   
   ngOnDestroy() {
