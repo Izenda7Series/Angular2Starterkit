@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import {IzendaIntegrate} from '../_helpers/izendaintegrate';
 
 
@@ -6,11 +6,16 @@ import {IzendaIntegrate} from '../_helpers/izendaintegrate';
     templateUrl: 'rootcontainer.html'
 })
 
-export class ReportCustomFilter implements AfterViewInit {
-    constructor(private izItergrate: IzendaIntegrate) {
-     }
+export class ReportCustomFilter implements AfterViewInit, OnDestroy {
+    dom: any = {};
+
+    constructor(private izItergrate: IzendaIntegrate) {}
 
     ngAfterViewInit() {
-        this.izItergrate.RenderReportCustomizedFilterViewer();
+        this.dom = this.izItergrate.RenderReportCustomizedFilterViewer();
+    }
+
+    ngOnDestroy() {
+        this.izItergrate.DestroyDom(this.dom);
     }
 }

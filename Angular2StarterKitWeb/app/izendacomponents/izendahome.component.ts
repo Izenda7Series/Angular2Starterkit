@@ -1,16 +1,20 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import {IzendaIntegrate} from '../_helpers/izendaintegrate';
-
 
 @Component({
     templateUrl: 'rootcontainer.html'
 })
 
-export class IzendaHome implements AfterViewInit {
-    constructor(private izItergrate: IzendaIntegrate) {
-     }
+export class IzendaHome implements AfterViewInit, OnDestroy {
+    dom: any = {};
+
+    constructor(private izItergrate: IzendaIntegrate) {}
 
     ngAfterViewInit() {
-        this.izItergrate.RenderIzenda();
+        this.dom = this.izItergrate.RenderIzenda();
+    }
+    
+    ngOnDestroy() {
+        this.izItergrate.DestroyDom(this.dom);
     }
 }

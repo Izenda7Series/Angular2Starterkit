@@ -54,19 +54,23 @@ export class IzendaIntegrate {
     RenderIzenda()
     {
         this.setContext();
-        IzendaSynergy.render(document.getElementById('izenda-root'));
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.render(dom);
+        return dom;
     }
 
     RenderIzendaSettings()
     {
         this.setContext();
-        IzendaSynergy.renderSettingPage(document.getElementById('izenda-root'));
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.renderSettingPage(dom);
+        return dom;
     }
 
     RenderReportList()
     {
-        let dom = document.getElementById('izenda-root');
         this.setContext();
+        let dom = document.getElementById('izenda-root');
         IzendaSynergy.renderReportPage(dom);
         return dom;
     }
@@ -82,7 +86,9 @@ export class IzendaIntegrate {
     RenderReportViewer()
     {
         this.setContext();
-        IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '[your report id]');
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.renderReportViewerPage(dom, '[your report id]');
+        return dom;
     }
 
     RenderReportCustomizedFilterViewer()
@@ -96,8 +102,10 @@ export class IzendaIntegrate {
                                     p2value: '30;#40'       // override filter value at position 2 which is applying on current report, change beetween (20:50) to (30:40)
                                 }
                             };
-      
-        IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '[your report id]', filtersObj);
+
+        let dom = document.getElementById('izenda-root');
+        IzendaSynergy.renderReportViewerPage(dom, '[your report id]', filtersObj);
+        return dom;
     }
 
     RenderReportParts()
@@ -161,9 +169,8 @@ export class IzendaIntegrate {
 
     DestroyDom(dom: any)
     {
-         this.setContext();
+        this.setContext();
         IzendaSynergy.unmountComponent(dom);
     }
-
 }
 
