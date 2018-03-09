@@ -10,7 +10,7 @@ The Angular2Starterkit illustrates the concepts of integrating Izenda into Angul
  :warning: **The Angular2Starterkit is designed for demonstration purposes and should not be used as an “as-is” fully-integrated solution. You can use the kit for reference or a baseline but ensure that security and customization meet the standards of your company.**
 
 
- :note: **The Izenda configuration database script provided is currently configured for Version 2.2.2 of Izenda.**
+ :note: **The Izenda configuration database script provided is currently configured for Version 2.6.20 of Izenda.**
 
 ## Installation 
  
