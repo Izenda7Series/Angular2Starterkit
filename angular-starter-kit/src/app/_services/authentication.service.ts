@@ -1,5 +1,5 @@
 ﻿import { Injectable } from '@angular/core';
-import { Http, Headers, Response, RequestOptions, URLSearchParams } from '@angular/http';
+import { HttpClient, HttpHeaders, HttpResponse, HttpParams } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs/rx';
 import 'rxjs/add/operator/map';
 import { ApiEndpointConfig } from '../api-endpoint-config';
@@ -11,7 +11,7 @@ export class AuthenticationService {
     public currentUserSubject = new BehaviorSubject<string>(localStorage.getItem('currentUser'));
     public isAuthenticatedSubject = new BehaviorSubject<boolean>(this.hasToken());
 
-    constructor(private http: Http, private router: Router) {
+    constructor(private httpClient: HttpClient, private router: Router) {
         // set token if saved in local storage
         this.token =  localStorage.getItem('tokenKey');
     }
@@ -19,23 +19,24 @@ export class AuthenticationService {
     login(tenantname: string, username: string, password: string): Observable<boolean> {
         const url: string = ApiEndpointConfig.getPath('login');
 
-        const urlSearchParams  = new URLSearchParams();
-        urlSearchParams.append('grant_type', 'password');
-        urlSearchParams.append('tenant', tenantname);
-        urlSearchParams.append('username', username);
-        urlSearchParams.append('password', password);
+        const authHttpParams  = new HttpParams()
+            .set('grant_type', 'password')
+            .set('username', username)
+            .set('password', password);
 
-        const body = urlSearchParams.toString();
+        if (tenantname) {
+            authHttpParams.set('tenant', tenantname);
+        }
+        const body = authHttpParams.toString();
 
-        const headers: Headers = new Headers(
-            { 'Content-Type': 'application/x-www-form-urlencoded',
-              'Access-Control-Allow-Origin': '*'});
-        const options: RequestOptions = new RequestOptions({ headers: headers });
+        const httpOptions = {
+            headers: new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' })
+        };
 
-        return this.http.post(url, body, options )
-            .map((response: Response) => {
-                const token = response.json() && response.json().access_token;
-                console.log(token);
+        return this.httpClient.post(url, body, httpOptions)
+            .map((response) => {
+                const token = response && response['access_token'];
+                console.log('Integrated access token: ' + token);
                 if (token) {
                     this.token = token;
                     localStorage.setItem('currentUser', username);
@@ -55,14 +56,16 @@ export class AuthenticationService {
     logout() {
         const url: string = ApiEndpointConfig.getPath('logout');
         const token = localStorage.getItem('tokenKey');
-        let headers: Headers;
+        let httpHeaders: HttpHeaders;
         if (token) {
-            headers = new Headers({ 'Authorization': 'Bearer ' + token });
+            httpHeaders = new HttpHeaders({ 'Authorization': 'Bearer ' + token });
         }
         const body = {};
-        const options: RequestOptions = new RequestOptions({ headers: headers });
+        const httpOptions = {
+            headers: httpHeaders
+        };
 
-        return this.http.post(url, body, options )
+        return this.httpClient.post(url, body, httpOptions )
             .subscribe(response => {
                     localStorage.removeItem('currentUser');
                     localStorage.removeItem('tokenKey');
@@ -80,14 +83,16 @@ export class AuthenticationService {
 
     register(tenantname: string, username: string, password: string, confirmpassword: string) {
         const url: string = ApiEndpointConfig.getPath('register');
-        const headers: Headers = new Headers({ 'Content-Type': 'application/json; charset=utf-8' });
+        const httpHeaders: HttpHeaders = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
         const body: string = JSON.stringify({Tenant: tenantname,  Email: username, Password: password, ConfirmPassword: confirmpassword });
-        const options: RequestOptions = new RequestOptions({ headers: headers });
+        const httpOptions = {
+            headers: httpHeaders
+        };
 
 
-        return this.http.post(url, body, options )
-            .map((response: Response) => {
-                if (response.status >= 200 && response.status < 300 ) {
+        return this.httpClient.post(url, body, httpOptions )
+            .map((response) => {
+                if (response['status'] >= 200 && response['status'] < 300 ) {
                     return true;
                 } else {
                       return false;
@@ -97,14 +102,17 @@ export class AuthenticationService {
 
     getIzendaToken(token: string): void {
         const url: string = ApiEndpointConfig.getPath('getizendatoken');
-        const  headers = new Headers({ 'Authorization': 'Bearer ' + token });
-        const options: RequestOptions = new RequestOptions({ headers: headers });
+        const httpHeaders: HttpHeaders = new HttpHeaders({ 'Authorization': 'Bearer ' + token });
+        const httpOptions = {
+            headers: httpHeaders
+        };
 
-        this.http.get(url, options)
+        this.httpClient.get(url, httpOptions)
         .subscribe(
             data => {
-                console.log(data.json());
-                localStorage.setItem('izendatoken', data.json());
+                const tokenValue = data as string;
+                console.log('Izenda token: ' + tokenValue);
+                localStorage.setItem('izendatoken', tokenValue);
             },
             error => {
                 console.log('Cannot get Izenda Token');

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 // used to create fake backend
 import { MockBackend, MockConnection } from '@angular/http/testing';
@@ -33,7 +33,12 @@ import {
 import { IzendaIntegrate } from './_helpers/izendaintegrate';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, Routing],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    Routing
+  ],
   declarations: [
     AppComponent,
     LoginComponent,
