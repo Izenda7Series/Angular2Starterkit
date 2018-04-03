@@ -115,10 +115,10 @@ Ensure that the AuthValidateAccessTokenUrl and AuthGetAccessTokenUrl values in t
 
 Examples:
 
-| Name                       | Value                                                   | 
-| -------------------------- |:--------------------------------------------------------|
-| AuthValidateAccessTokenUrl |http://localhost:3358/api/account/validateIzendaAuthToken|
-| AuthGetAccessTokenUrl      |http://localhost:3358/api/account/GetIzendaAccessToken   |
+| Name                       | Value                                                             | 
+| -------------------------- |:------------------------------------------------------------------|
+| AuthValidateAccessTokenUrl |http://localhost:3358/api/IzendaAccessToken/ValidateIzendaAuthToken|
+| AuthGetAccessTokenUrl      |http://localhost:3358/api/IzendaAccessToken/GetIzendaAccessToken   |
 
 </br>
 

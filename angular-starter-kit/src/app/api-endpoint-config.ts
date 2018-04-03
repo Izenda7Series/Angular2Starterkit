@@ -10,7 +10,7 @@ export class ApiEndpointConfig {
             case 'logout':
                 return apiEndPoint + 'api/Account/Logout';
             case 'getizendatoken':
-                return apiEndPoint + 'api/User/GenerateToken';
+                return apiEndPoint + 'api/IzendaUser/GenerateToken';
             default:
                 return '';
         }

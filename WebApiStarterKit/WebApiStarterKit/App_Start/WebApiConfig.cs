@@ -13,9 +13,6 @@ namespace WebApiStarterKit
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
-            // Enable CROS
-            config.EnableCors(new EnableCorsAttribute(origins: "*", headers: "*", methods: "*"));
-
             // Web API routes
             config.MapHttpAttributeRoutes();
 
