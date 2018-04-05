@@ -26,6 +26,7 @@ body {
     width: 100%;
     height: 100%;
     min-height: 100%;
+    margin-top: 6px;
 }
 .quarter-screen{
     float: left;
@@ -105,15 +106,20 @@ body {
     color: #1c4e89;
 }
 
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:focus,
+.navbar-nav>.active>a:hover {
     cursor: default;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    text-decoration: none;
+    background-color: #b2cbdb;
 }
 
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:focus,
 .dropdown-menu>.active>a:hover {
-    background-color: #444242;
+    text-decoration: none;
     cursor: default;
 }
