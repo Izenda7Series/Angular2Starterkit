@@ -1,46 +1,49 @@
 ﻿import { Injectable } from '@angular/core';
-import { Http, Headers, Response, RequestOptions, URLSearchParams } from '@angular/http';
-import { BehaviorSubject, Observable } from 'rxjs';
-import 'rxjs/add/operator/map'
-import {Config} from '../config'
-import { Router } from "@angular/router";
+import { HttpClient, HttpHeaders, HttpResponse, HttpParams } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { BehaviorSubject, Observable } from 'rxjs/Rx';
+import 'rxjs/add/operator/map';
+import { Config } from '../config';
 
 @Injectable()
 export class AuthenticationService {
     public token: string;
     public currentUserSubject = new BehaviorSubject<string>(localStorage.getItem('currentUser'));
     public isAuthenticatedSubject = new BehaviorSubject<boolean>(this.hasToken());
-    
-    constructor(private http: Http, private router:Router) {
+
+    constructor(private httpClient: HttpClient, private router: Router) {
         // set token if saved in local storage
         this.token =  localStorage.getItem('tokenKey');
     }
 
     login(tenantname: string, username: string, password: string): Observable<boolean> {
-        let url: string = Config.getPath("login");
-        
-        let urlSearchParams  = new URLSearchParams();
-        urlSearchParams.append('grant_type', 'password');
-        urlSearchParams.append('tenant', tenantname);
-        urlSearchParams.append('username', username);
-        urlSearchParams.append('password', password);
+        const url: string = Config.getPath('login');
 
-        let body = urlSearchParams.toString();
+        const authHttpParams  = new HttpParams()
+            .set('grant_type', 'password')
+            .set('username', username)
+            .set('password', password);
 
-        let headers: Headers = new Headers({ "Content-Type": "application/x-www-form-urlencoded" });
-        let options: RequestOptions = new RequestOptions({ headers: headers });
-        
-        return this.http.post(url, body, options )
-            .map((response: Response) => {
-                let token = response.json() && response.json().access_token;
-                console.log(token);
+        if (tenantname) {
+            authHttpParams.set('tenant', tenantname);
+        }
+        const body = authHttpParams.toString();
+
+        const httpOptions = {
+            headers: new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' })
+        };
+
+        return this.httpClient.post(url, body, httpOptions)
+            .map((response) => {
+                const token = response && response['access_token'];
+                console.log('Integrated access token: ' + token);
                 if (token) {
                     this.token = token;
                     localStorage.setItem('currentUser', username);
                     localStorage.setItem('tokenKey', token);
                     this.getIzendaToken(token);
 
-                    //Notify is authenticated
+                    // Notify is authenticated
                     this.isAuthenticatedSubject.next(true);
                     this.currentUserSubject.next(username);
                     return true;
@@ -50,68 +53,74 @@ export class AuthenticationService {
             });
     }
 
-    logout(){
-        let url: string = Config.getPath("logout");
-        var token = localStorage.getItem("tokenKey");
-        let headers:Headers;
+    logout() {
+        const url: string = Config.getPath('logout');
+        const token = localStorage.getItem('tokenKey');
+        let httpHeaders: HttpHeaders;
         if (token) {
-            headers = new Headers({ "Authorization": 'Bearer ' + token });
+            httpHeaders = new HttpHeaders({ 'Authorization': 'Bearer ' + token });
         }
-        let body = {};
-        let options: RequestOptions = new RequestOptions({ headers: headers });
+        const body = {};
+        const httpOptions = {
+            headers: httpHeaders
+        };
 
-        return this.http.post(url, body, options )
+        return this.httpClient.post(url, body, httpOptions )
             .subscribe(response => {
                     localStorage.removeItem('currentUser');
                     localStorage.removeItem('tokenKey');
                     localStorage.removeItem('izendatoken');
 
-                    //Notify is not authenticated
+                    // Notify is not authenticated
                     this.isAuthenticatedSubject.next(false);
                     this.currentUserSubject.next(null);
                 },
-            err=> { 
+            err => {
                 console.log(err);
                 });
-        
+
     }
 
     register(tenantname: string, username: string, password: string, confirmpassword: string) {
-        let url: string = Config.getPath("register");
-        let headers: Headers = new Headers({ "Content-Type": "application/json; charset=utf-8" });
-        let body: string = JSON.stringify({Tenant: tenantname,  Email: username, Password: password, ConfirmPassword: confirmpassword });
-        let options: RequestOptions = new RequestOptions({ headers: headers });
+        const url: string = Config.getPath('register');
+        const httpHeaders: HttpHeaders = new HttpHeaders({ 'Content-Type': 'application/json; charset=utf-8' });
+        const body: string = JSON.stringify({Tenant: tenantname,  Email: username, Password: password, ConfirmPassword: confirmpassword });
+        const httpOptions = {
+            headers: httpHeaders
+        };
 
 
-        return this.http.post(url, body, options )
-            .map((response: Response) => {
-                if(response.status >= 200 && response.status < 300 ){
+        return this.httpClient.post(url, body, httpOptions )
+            .map((response) => {
+                if (response['status'] >= 200 && response['status'] < 300 ) {
                     return true;
-                }
-                else{
+                } else {
                       return false;
                 }
             });
     }
 
-    getIzendaToken(token:string): void {
-        let url: string = Config.getPath("getizendatoken");
-        let  headers = new Headers({ "Authorization": 'Bearer ' + token });
-        let options: RequestOptions = new RequestOptions({ headers: headers });
+    getIzendaToken(token: string): void {
+        const url: string = Config.getPath('getizendatoken');
+        const httpHeaders: HttpHeaders = new HttpHeaders({ 'Authorization': 'Bearer ' + token });
+        const httpOptions = {
+            headers: httpHeaders
+        };
 
-        this.http.get(url, options)
+        this.httpClient.get(url, httpOptions)
         .subscribe(
             data => {
-                console.log(data.json());
-                localStorage.setItem("izendatoken", data.json());
+                const tokenValue = data as string;
+                console.log('Izenda token: ' + tokenValue);
+                localStorage.setItem('izendatoken', tokenValue);
             },
             error => {
-                console.log("Cannot get Izenda Token");
+                console.log('Cannot get Izenda Token');
                 console.log(error);
             });
     }
 
-    hasToken() : boolean {
+    hasToken(): boolean {
         return !!localStorage.getItem('tokenKey');
     }
 
@@ -119,7 +128,7 @@ export class AuthenticationService {
         return this.currentUserSubject.asObservable();
     }
 
-    isAuthenticated() : Observable<boolean> {
+    isAuthenticated(): Observable<boolean> {
         return this.isAuthenticatedSubject.asObservable();
     }
 }
