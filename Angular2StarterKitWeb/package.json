@@ -6,7 +6,7 @@
         "url": "https://github.com/Izenda7Series/Angular2Starterkit.git"
     },
     "scripts": {
-        "start": "webpack-dev-server --inline --progress --open --port 3000",
+        "start": "webpack-dev-server --inline --progress --open --port 3001",
         "build": "rimraf dist && webpack --progress --config config/webpack.prod.js --bail",
         "tsc": "tsc",
         "tsc:w": "tsc -w"
@@ -22,8 +22,10 @@
         "@angular/platform-browser-dynamic": "^5.2.10",
         "@angular/router": "^5.2.10",
         "@angular/upgrade": "^5.2.10",
-        "bootstrap": "^3.3.7",
+        "bootstrap": "^4.1.3",
         "core-js": "^2.5.5",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.4",
         "rxjs": "^5.5.10",
         "zone.js": "^0.8.26"
     },
@@ -39,9 +41,11 @@
         "file-loader": "^0.11.2",
         "html-loader": "^0.5.5",
         "html-webpack-plugin": "^2.30.1",
+        "node-sass": "^4.9.3",
         "null-loader": "^0.1.1",
         "raw-loader": "^0.5.1",
         "rimraf": "^2.6.2",
+        "sass-loader": "^7.1.0",
         "style-loader": "^0.21.0",
         "to-string-loader": "^1.1.5",
         "typescript": "2.6.x",
