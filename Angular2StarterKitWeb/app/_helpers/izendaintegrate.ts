@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import {Injectable} from '@angular/core';
+import {Router} from '@angular/router';
 import "../../assets/izenda/izenda_common";
 import "../../assets/izenda/izenda_locales";
 import "../../assets/izenda/izenda_vendors";
@@ -9,13 +9,12 @@ let IzendaSynergy = require("../../assets/izenda/izenda_ui");
 @Injectable()
 export class IzendaIntegrate {
 
-    constructor(private router: Router) {
-    }
+    constructor(private router : Router) {}
 
-    DoIzendaConfig():void
+    DoIzendaConfig() : void
     {
-       IzendaSynergy.config({
-            "WebApiUrl": "http://localhost:8101/api/",
+        IzendaSynergy.config({
+            "WebApiUrl": "http://localhost:7001/api/",
             "BaseUrl": "/",
             "RootPath": "/assets/izenda",
             "CssFile": "izenda-ui.css",
@@ -29,20 +28,22 @@ export class IzendaIntegrate {
                 "New": "new",
                 "Settings": "settings",
                 "Account": "account",
-                "MyProfile": "myprofile",
+                "MyProfile": "myprofile"
             },
             "Timeout": 3600,
-            "NeedToEncodeUrl" : false,
-            "OnReceiveUnauthorizedResponse": this.redirectToLoginPage,
+            "NeedToEncodeUrl": false,
+            "OnReceiveUnauthorizedResponse": this.redirectToLoginPage
         });
     }
 
-    redirectToLoginPage(){
+    redirectToLoginPage() {
         console.log("Current user is unauthorized to access Izenda function. Navaigate to login page");
-        this.router.navigate(['/login']);
+        this
+            .router
+            .navigate(['/login']);
     }
 
-   setContext():void {  
+    setContext() : void {
         var currentUserContext = {
             token: localStorage.getItem("izendatoken")
         };
@@ -75,7 +76,7 @@ export class IzendaIntegrate {
         return dom;
     }
 
-    RenderReportDesigner(): any
+    RenderReportDesigner() : any
     {
         this.setContext();
         let dom = document.getElementById('izenda-root');
@@ -94,14 +95,13 @@ export class IzendaIntegrate {
     RenderReportCustomizedFilterViewer()
     {
         this.setContext();
-        let filtersObj:any = {
-                                "filters": [],
-                                "overridingFilterValue": 
-                                {  // filter object to pass to api
-                                    p1value: 50,            // override filter value at position 1 which is applying on current report, change >30 to >50
-                                    p2value: '30;#40'       // override filter value at position 2 which is applying on current report, change beetween (20:50) to (30:40)
-                                }
-                            };
+        let filtersObj : any = {
+            "filters": [],
+            "overridingFilterValue": { // filter object to pass to api
+                p1value: 50, // override filter value at position 1 which is applying on current report, change >30 to >50
+                p2value: '30;#40' // override filter value at position 2 which is applying on current report, change beetween (20:50) to (30:40)
+            }
+        };
 
         let dom = document.getElementById('izenda-root');
         IzendaSynergy.renderReportViewerPage(dom, '[your report id]', filtersObj);
@@ -112,35 +112,27 @@ export class IzendaIntegrate {
     {
         //debugger;
         this.setContext();
-        IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part1'), {
-                "id": "[your 1st report part id]",
-            });
+        IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part1'), {"id": "[your 1st report part id]"});
 
-        IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part2'), {
-                    "id": "[your 2nd report part id]",
-                });
+        IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part2'), {"id": "[your 2nd report part id]"});
 
-        IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part3'), {
-                    "id": "[your 3rd report part id]",
-                });
+        IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part3'), {"id": "[your 3rd report part id]"});
 
     }
 
-    UpdateResultReportPart(reportPartId: string, overridingFilterValue: any, containerId: string)
+    UpdateResultReportPart(reportPartId : string, overridingFilterValue : any, containerId : string)
     {
         this.setContext();
         IzendaSynergy.renderReportPart(document.getElementById(containerId), {
             "id": reportPartId,
-            "overridingFilterValue": overridingFilterValue,
+            "overridingFilterValue": overridingFilterValue
         });
     }
 
-    RenderSingleReportPart(reportPartId: string, containerId: string)
+    RenderSingleReportPart(reportPartId : string, containerId : string)
     {
         this.setContext();
-        IzendaSynergy.renderReportPart(document.getElementById(containerId), {
-            "id": reportPartId
-        });
+        IzendaSynergy.renderReportPart(document.getElementById(containerId), {"id": reportPartId});
     }
 
     RenderDashboard()
@@ -167,7 +159,7 @@ export class IzendaIntegrate {
         return dom;
     }
 
-    DestroyDom(dom: any)
+    DestroyDom(dom : any)
     {
         this.setContext();
         IzendaSynergy.unmountComponent(dom);
@@ -175,30 +167,34 @@ export class IzendaIntegrate {
 
     /* Izenda Helper Function */
 
-    AutoHideIzenaProgressBar(){
+    AutoHideIzenaProgressBar() {
         this.HideIzenaProgressBar("izenda-root", "progressLoader");
     }
 
-    HideIzenaProgressBar(targetId: string, progressBarId: string)
+    HideIzenaProgressBar(targetId : string, progressBarId : string)
     {
         // select the target node
         var target = document.getElementById(targetId);
-    
+
         var observer = new MutationObserver(function (mutations) {
-            mutations.forEach(function (mutation) {
-                let progressBar = document.getElementById(progressBarId);
-                if(progressBar){
-                    progressBar.style.display = 'none';
-                }
-            });
+            mutations
+                .forEach(function (mutation) {
+                    let progressBar = document.getElementById(progressBarId);
+                    if (progressBar) {
+                        progressBar.style.display = 'none';
+                    }
+                });
         });
-    
+
         // configuration of the observer:
-        var config = { attributes: true, childList: true, characterData: true };
+        var config = {
+            attributes: true,
+            childList: true,
+            characterData: true
+        };
         if (target) {
             // pass in the target node, as well as the observer options
             observer.observe(target, config);
         }
     }
 }
-
