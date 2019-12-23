@@ -15,7 +15,7 @@ export class IzendaIntegrate {
 	DoIzendaConfig(): void {
 		IzendaSynergy.config({
 			"WebApiUrl": "http://localhost:7001/api/",
-			"BaseUrl": "/",
+			"BaseUrl": "/izenda",
 			"RootPath": "/assets/izenda",
 			"CssFile": "izenda-ui.css",
 			"Routes": {
@@ -74,9 +74,9 @@ export class IzendaIntegrate {
 		return dom;
 	}
 
-	RenderReportViewer() {
+	RenderReportViewer(reportId: string, filters: any) {
 		this.setContext();
-		IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), '[your report id]');
+		IzendaSynergy.renderReportViewerPage(document.getElementById('izenda-root'), reportId || '[your report id]', filters);
 	}
 
 	RenderReportCustomizedFilterViewer() {
@@ -94,7 +94,6 @@ export class IzendaIntegrate {
 	}
 
 	RenderReportParts() {
-		//debugger;
 		this.setContext();
 		IzendaSynergy.renderReportPart(document.getElementById('izenda-report-part1'), {
 			"id": "[your 1st report part id]",
