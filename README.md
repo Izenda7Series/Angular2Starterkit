@@ -1,4 +1,4 @@
-# Izenda Angular2Starterkit
+# Izenda Angular2Starterkit (Unsupported)
 
 ## Overview
 The Angular2Starterkit illustrates the concepts of integrating Izenda into Angular2 applications.
